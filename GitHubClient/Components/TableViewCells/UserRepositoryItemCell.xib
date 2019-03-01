@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="188" id="KGk-i7-Jjw" customClass="UserRepositoryItemCell" customModule="GitHubClient" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="105.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="repository" translatesAutoresizingMaskIntoConstraints="NO" id="pME-1H-uUx">
+                        <rect key="frame" x="5" y="5" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="eX2-04-MRG"/>
+                            <constraint firstAttribute="height" constant="48" id="hP6-6C-ENG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repository" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="gDN-bV-iOc" userLabel="I">
+                        <rect key="frame" x="58" y="5" width="307" height="29"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 Stars, JavaScript" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="bs3-LY-8Rn" userLabel="B">
+                        <rect key="frame" x="58" y="34" width="307" height="19"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="NjM-aI-ugs">
+                        <rect key="frame" x="10" y="58" width="355" height="42.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NjM-aI-ugs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="1Ha-ez-MfQ"/>
+                    <constraint firstItem="gDN-bV-iOc" firstAttribute="height" secondItem="pME-1H-uUx" secondAttribute="height" multiplier="0.6" id="1pe-Ty-40X"/>
+                    <constraint firstAttribute="trailing" secondItem="NjM-aI-ugs" secondAttribute="trailing" constant="10" id="2S3-dO-tVN"/>
+                    <constraint firstItem="pME-1H-uUx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="4n0-vp-knS"/>
+                    <constraint firstItem="gDN-bV-iOc" firstAttribute="leading" secondItem="pME-1H-uUx" secondAttribute="trailing" constant="5" id="EwV-Rv-5ZA"/>
+                    <constraint firstItem="bs3-LY-8Rn" firstAttribute="height" secondItem="pME-1H-uUx" secondAttribute="height" multiplier="0.4" id="ItU-GR-Bxf"/>
+                    <constraint firstItem="bs3-LY-8Rn" firstAttribute="top" secondItem="gDN-bV-iOc" secondAttribute="bottom" id="UfA-Lt-ae6"/>
+                    <constraint firstAttribute="trailing" secondItem="gDN-bV-iOc" secondAttribute="trailing" constant="10" id="VMC-Km-zrh"/>
+                    <constraint firstAttribute="trailing" secondItem="bs3-LY-8Rn" secondAttribute="trailing" constant="10" id="YLp-Kn-1Wq"/>
+                    <constraint firstAttribute="bottom" secondItem="NjM-aI-ugs" secondAttribute="bottom" constant="5" id="iV2-8n-H2D"/>
+                    <constraint firstItem="pME-1H-uUx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ljK-KY-zSX"/>
+                    <constraint firstItem="NjM-aI-ugs" firstAttribute="top" secondItem="pME-1H-uUx" secondAttribute="bottom" constant="5" id="pEP-c3-4to"/>
+                    <constraint firstItem="bs3-LY-8Rn" firstAttribute="leading" secondItem="pME-1H-uUx" secondAttribute="trailing" constant="5" id="te7-hg-dgE"/>
+                    <constraint firstItem="gDN-bV-iOc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="wPp-aS-JXX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="NjM-aI-ugs" id="saa-7B-rfx"/>
+                <outlet property="nameLabel" destination="gDN-bV-iOc" id="KyP-ce-vLO"/>
+                <outlet property="starGazersAndLanguageLabel" destination="bs3-LY-8Rn" id="bha-aP-NLI"/>
+            </connections>
+            <point key="canvasLocation" x="199.19999999999999" y="161.01949025487258"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="repository" width="32" height="32"/>
+    </resources>
+</document>

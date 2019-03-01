@@ -1,0 +1,10 @@
+disabled_rules:
+- line_length
+- trailing_whitespace
+- force_cast
+excluded:
+- Carthage
+- Pods
+identifier_name:
+  excluded:
+  - id
