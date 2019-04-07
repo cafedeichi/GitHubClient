@@ -15,7 +15,7 @@ struct UserListActionCreator {
         
         let lastUserId = (refresh) ? 0 : since
         
-        store.dispatch(UserListState.UserListAction.loadUserList())
+        store.dispatch(UserListState.UserListAction.loadUserList)
         
         UserApiManager.getUserList(since: lastUserId).done { (json) in
             let userList = User.getUserListBy(json: json)
