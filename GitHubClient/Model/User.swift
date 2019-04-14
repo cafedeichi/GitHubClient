@@ -16,7 +16,7 @@ class User {
         var userList: [UserEntity] = []
         
         for (key: _, value: value) in json {
-            userList.append(UserEntity(value))
+            userList.append(UserEntity(from: value))
         }
         
         return userList

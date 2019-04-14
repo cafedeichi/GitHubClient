@@ -34,8 +34,8 @@ class UserRepositoryItemCell: UITableViewCell {
     
     func configureCell(repository: RepositoryEntity) {
         self.nameLabel.text = repository.name
-        self.starGazersAndLanguageLabel.text = "\(repository.stargazersCount ?? 0) Stars, \(repository.language!.count > 0 ? repository.language! : "Unknown")"
-        if repository.description!.count > 0 {
+        self.starGazersAndLanguageLabel.text = "\(repository.stargazersCount ?? 0) Stars, \(repository.language ?? "Unknown")"
+        if repository.description != nil {
             self.descriptionLabel.text = repository.description
         } else {
             self.descriptionLabel.text = "No Description."

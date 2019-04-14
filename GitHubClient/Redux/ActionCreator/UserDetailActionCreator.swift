@@ -15,8 +15,7 @@ struct UserDetailActionCreator {
         
         store.dispatch(UserDetailState.UserDetailAction.load)
         
-        UserApiManager.getUser(url: url).done { (json) in
-            let user = UserEntity(json)
+        UserApiManager.getUser(url: url).done { user in
             store.dispatch(UserDetailState.UserDetailAction.loadedUser(user: user))
             }.catch { (error) in
                 store.dispatch(UserDetailState.UserDetailAction.failure(error: error))
@@ -30,14 +29,16 @@ struct UserDetailActionCreator {
         
         store.dispatch(UserDetailState.UserDetailAction.load)
         
-        RepositoryApiManager.getRepositoryList(reposUrl: reposUrl, page: nextPage).done { (json) in
-            let repositoryList = Repository.getRepositoryListBy(json: json).filter({ (repository) -> Bool in
+        RepositoryApiManager.getRepositoryList(reposUrl: reposUrl, page: nextPage).done { (repositoryList) in
+            
+            let filteredRepositoryList = repositoryList.filter({ (repository) -> Bool in
                 repository.fork == false
             })
+            
             if loadMore {
-                store.dispatch(UserDetailState.UserDetailAction.loadedRepositoryListMore(repostoryList: repositoryList))
+                store.dispatch(UserDetailState.UserDetailAction.loadedRepositoryListMore(repostoryList: filteredRepositoryList))
             } else {
-                store.dispatch(UserDetailState.UserDetailAction.loadedRepositoryList(repostoryList: repositoryList))
+                store.dispatch(UserDetailState.UserDetailAction.loadedRepositoryList(repostoryList: filteredRepositoryList))
             }
             }.catch { (error) in
                 store.dispatch(UserDetailState.UserDetailAction.failure(error: error))

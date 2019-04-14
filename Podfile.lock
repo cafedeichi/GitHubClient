@@ -17,7 +17,6 @@ PODS:
   - PullToRefresher (3.1)
   - ReSwift (4.0.1)
   - SwiftLint (0.29.1)
-  - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.0)
@@ -27,7 +26,6 @@ DEPENDENCIES:
   - PullToRefresher (~> 3.1)
   - ReSwift (~> 4.0.1)
   - SwiftLint (~> 0.29.1)
-  - SwiftyJSON (~> 4.2.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -39,7 +37,6 @@ SPEC REPOS:
     - PullToRefresher
     - ReSwift
     - SwiftLint
-    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
@@ -50,8 +47,7 @@ SPEC CHECKSUMS:
   PullToRefresher: ec8c1942bd61bb512ff520c49f9f00903cfa86c7
   ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
   SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
-  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 387c3f7aa61bfeb444bdebc1914490be30a8911b
+PODFILE CHECKSUM: f7617f0efe9b5ab42169e5db624d1e56fc8d73d5
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1

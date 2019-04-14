@@ -17,11 +17,10 @@ struct UserListActionCreator {
         
         store.dispatch(UserListState.UserListAction.loadUserList)
         
-        UserApiManager.getUserList(since: lastUserId).done { (json) in
-            let userList = User.getUserListBy(json: json)
+        UserApiManager.getUserList(since: lastUserId).done { userList in
             store.dispatch(UserListState.UserListAction.loadedUserList(userList: userList, refresh: refresh))
-        }.catch { (error) in
-            store.dispatch(UserListState.UserListAction.failure(error: error))
+            }.catch { error in
+                store.dispatch(UserListState.UserListAction.failure(error: error))
         }
         
     }

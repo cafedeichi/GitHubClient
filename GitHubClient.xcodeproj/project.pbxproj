@@ -37,7 +37,6 @@
 		5087A01522225305002267E1 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A01422225305002267E1 /* UserEntity.swift */; };
 		5087A01922225E40002267E1 /* UserListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A01822225E40002267E1 /* UserListAction.swift */; };
 		5087A01B22226404002267E1 /* UserListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A01A22226404002267E1 /* UserListReducer.swift */; };
-		5087A01F22227C65002267E1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A01E22227C65002267E1 /* User.swift */; };
 		5087A0272222952E002267E1 /* UserListActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A0262222952E002267E1 /* UserListActionCreator.swift */; };
 		5087A02922229E59002267E1 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A02822229E59002267E1 /* APIConstants.swift */; };
 		5087A02B2222A1B7002267E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5087A02A2222A1B7002267E1 /* Main.storyboard */; };
@@ -47,10 +46,10 @@
 		50ADFBB522254FD60037924E /* UserDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBB422254FD60037924E /* UserDetailState.swift */; };
 		50ADFBB7222550430037924E /* UserDetailAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBB6222550430037924E /* UserDetailAction.swift */; };
 		50ADFBB922256B9B0037924E /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBB822256B9B0037924E /* RepositoryEntity.swift */; };
-		50ADFBBB222571100037924E /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBBA222571100037924E /* Repository.swift */; };
 		50ADFBBD222572B80037924E /* RepositoryApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBBC222572B80037924E /* RepositoryApiManager.swift */; };
 		50ADFBBF222574A30037924E /* UserDetailActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBBE222574A30037924E /* UserDetailActionCreator.swift */; };
 		50ADFBC1222576F60037924E /* UserDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBC0222576F60037924E /* UserDetailReducer.swift */; };
+		50D1EAB02262E73A00CCF6CB /* LicenseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAAF2262E73A00CCF6CB /* LicenseEntity.swift */; };
 		7800CF08E296A8B23115AA41 /* Pods_GitHubClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B087E36A4B21E70C1B5E54 /* Pods_GitHubClient.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,7 +83,6 @@
 		5087A01422225305002267E1 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		5087A01822225E40002267E1 /* UserListAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListAction.swift; sourceTree = "<group>"; };
 		5087A01A22226404002267E1 /* UserListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListReducer.swift; sourceTree = "<group>"; };
-		5087A01E22227C65002267E1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5087A0262222952E002267E1 /* UserListActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListActionCreator.swift; sourceTree = "<group>"; };
 		5087A02822229E59002267E1 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		5087A02A2222A1B7002267E1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -94,10 +92,10 @@
 		50ADFBB422254FD60037924E /* UserDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailState.swift; sourceTree = "<group>"; };
 		50ADFBB6222550430037924E /* UserDetailAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailAction.swift; sourceTree = "<group>"; };
 		50ADFBB822256B9B0037924E /* RepositoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEntity.swift; sourceTree = "<group>"; };
-		50ADFBBA222571100037924E /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		50ADFBBC222572B80037924E /* RepositoryApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryApiManager.swift; sourceTree = "<group>"; };
 		50ADFBBE222574A30037924E /* UserDetailActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailActionCreator.swift; sourceTree = "<group>"; };
 		50ADFBC0222576F60037924E /* UserDetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailReducer.swift; sourceTree = "<group>"; };
+		50D1EAAF2262E73A00CCF6CB /* LicenseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseEntity.swift; sourceTree = "<group>"; };
 		54B087E36A4B21E70C1B5E54 /* Pods_GitHubClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9040862979A2E9C365A16413 /* Pods-GitHubClient.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubClient.staging.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubClient/Pods-GitHubClient.staging.xcconfig"; sourceTree = "<group>"; };
 		D6443030C711A42FEC00FEA7 /* Pods-GitHubClient.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubClient.develop.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubClient/Pods-GitHubClient.develop.xcconfig"; sourceTree = "<group>"; };
@@ -227,8 +225,6 @@
 			children = (
 				5087A010222226CA002267E1 /* APIManager */,
 				5087A0132222522A002267E1 /* Entity */,
-				5087A01E22227C65002267E1 /* User.swift */,
-				50ADFBBA222571100037924E /* Repository.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,6 +244,7 @@
 			children = (
 				5087A01422225305002267E1 /* UserEntity.swift */,
 				50ADFBB822256B9B0037924E /* RepositoryEntity.swift */,
+				50D1EAAF2262E73A00CCF6CB /* LicenseEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -429,7 +426,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GitHubClient/Pods-GitHubClient-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-GitHubClient/Pods-GitHubClient-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/KRActivityIndicatorView/KRActivityIndicatorView.framework",
@@ -437,7 +434,6 @@
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/PullToRefresher/PullToRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -448,11 +444,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GitHubClient/Pods-GitHubClient-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitHubClient/Pods-GitHubClient-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -476,10 +471,9 @@
 				50621E082227814200EF217F /* UserDetailSectionView.swift in Sources */,
 				50621DF3222639AD00EF217F /* UserRepositoryItemCell.swift in Sources */,
 				5087A00B22219171002267E1 /* UserListViewController.swift in Sources */,
-				50ADFBBB222571100037924E /* Repository.swift in Sources */,
 				5087A01522225305002267E1 /* UserEntity.swift in Sources */,
 				503C169F22295DDB0067B9E5 /* Middleware.swift in Sources */,
-				5087A01F22227C65002267E1 /* User.swift in Sources */,
+				50D1EAB02262E73A00CCF6CB /* LicenseEntity.swift in Sources */,
 				50621E0A2227D02D00EF217F /* UIColorExtension.swift in Sources */,
 				5087A012222226EA002267E1 /* UserAPIManager.swift in Sources */,
 				5087A02E2222DA8B002267E1 /* Store.swift in Sources */,

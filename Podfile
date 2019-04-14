@@ -8,7 +8,6 @@ target 'GitHubClient' do
   pod 'SwiftLint', '~> 0.29.1'
   pod 'Alamofire', '~> 4.8.0'
   pod 'AlamofireImage', '~> 3.5.0'
-  pod 'SwiftyJSON', '~> 4.2.0'
   pod 'PromiseKit', '~>6.7.0'
   pod 'KRProgressHUD', '~>3.4.0'
   pod 'PullToRefresher', '~>3.1'

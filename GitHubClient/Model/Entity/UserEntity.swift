@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import SwiftyJSON
 
-struct UserEntity {
+class UserEntity: Codable {
     
     let login: String
     let id: Int
@@ -34,7 +33,7 @@ struct UserEntity {
     let blog: String?
     let location: String?
     let email: String?
-    let hireable: String?
+    let hireable: Bool?
     let bio: String?
     let publicRepos: Int?
     let publicGists: Int?
@@ -43,38 +42,38 @@ struct UserEntity {
     let createdAt: String?
     let updatedAt: String?
     
-    init(_ json: JSON) {
-        login = json["login"].stringValue
-        id = json["id"].intValue
-        nodeId = json["node_id"].stringValue
-        avatarUrl = json["avatar_url"].stringValue
-        gravatarId = json["gravatar_id"].stringValue
-        url = json["url"].stringValue
-        htmlUrl = json["html_url"].stringValue
-        followersUrl = json["followers_url"].stringValue
-        followingUrl = json["following_url"].stringValue
-        gistsUrl = json["gists_url"].stringValue
-        starredUrl = json["starred_url"].stringValue
-        subscriptionsUrl = json["subscriptions_url"].stringValue
-        organizationsUrl = json["organizations_url"].stringValue
-        reposUrl = json["repos_url"].stringValue
-        eventsUrl = json["events_url"].stringValue
-        receivedEventsUrl = json["received_events_url"].stringValue
-        type = json["type"].stringValue
-        siteAdmin = json["site_admin"].boolValue
-        name = json["name"].stringValue
-        company = json["company"].stringValue
-        blog = json["blog"].stringValue
-        location = json["location"].stringValue
-        email = json["email"].stringValue
-        hireable = json["hireable"].stringValue
-        bio = json["bio"].stringValue
-        publicRepos = json["public_repos"].intValue
-        publicGists = json["public_gists"].intValue
-        followers = json["followers"].intValue
-        following = json["following"].intValue
-        createdAt = json["created_at"].stringValue
-        updatedAt = json["updated_at"].stringValue
+    private enum CodingKeys: String, CodingKey {
+        case login
+        case id
+        case nodeId = "node_id"
+        case avatarUrl = "avatar_url"
+        case gravatarId = "gravatar_id"
+        case url
+        case htmlUrl = "html_url"
+        case followersUrl = "followers_url"
+        case followingUrl = "following_url"
+        case gistsUrl = "gists_url"
+        case starredUrl = "starred_url"
+        case subscriptionsUrl = "subscriptions_url"
+        case organizationsUrl = "organizations_url"
+        case reposUrl = "repos_url"
+        case eventsUrl = "events_url"
+        case receivedEventsUrl = "received_events_url"
+        case type
+        case siteAdmin = "site_admin"
+        case name
+        case company
+        case blog
+        case location
+        case email
+        case hireable
+        case bio
+        case publicRepos = "public_repos"
+        case publicGists = "public_gists"
+        case followers
+        case following
+        case createdAt = "created_at"
+        case updatedAt = "updated_at"
     }
     
 }

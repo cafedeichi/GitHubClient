@@ -9,24 +9,24 @@
 import Foundation
 import Alamofire
 import PromiseKit
-import SwiftyJSON
 
 class RepositoryApiManager {
     
-    public static func getRepositoryList(reposUrl: String, page: Int = 0) -> Promise<JSON> {
+    public static func getRepositoryList(reposUrl: String, page: Int = 0) -> Promise<[RepositoryEntity]> {
         
         let parameters: [String: Any] = [
             "access_token": APIConstants.accessToken,
             "page": page
         ]
         
-        return Promise<JSON> { seal in
-            Alamofire.request(reposUrl, method: .get, parameters: parameters).validate().responseJSON { response in
-                switch response.result {
-                case .success(let response):
-                    let json = JSON(response)
-                    seal.fulfill(json)
-                case .failure(let error):
+        return Promise<[RepositoryEntity]> { seal in
+            Alamofire.request(reposUrl, method: .get, parameters: parameters).validate().response { response in
+                guard let data = response.data else { return }
+                do {
+                    let decoder = JSONDecoder()
+                    let repositoryList = try decoder.decode([RepositoryEntity].self, from: data)
+                    seal.fulfill(repositoryList)
+                } catch let error {
                     seal.reject(error)
                 }
             }

@@ -5,11 +5,9 @@
 //  Created by ichi on 2019/02/26.
 //  Copyright © 2019 Cafe De Ichi. All rights reserved.
 //
-
 import Foundation
-import SwiftyJSON
 
-struct RepositoryEntity {
+class RepositoryEntity: Codable {
     
     let id: Int?
     let nodeId: String?
@@ -75,88 +73,90 @@ struct RepositoryEntity {
     let hasWiki: Bool?
     let hasPages: Bool?
     let forksCount: Int?
-    let mirrorUrl: Any?
+    let mirrorUrl: String?
     let archived: Bool?
+    let disabled: Bool?
     let openIssuesCount: Int?
-    let license: Any?
+    let license: LicenseEntity?
     let forks: Int?
     let openIssues: Int?
     let watchers: Int?
     let defaultBranch: String?
     
-    init(_ json: JSON) {    // swiftlint:disable:this function_body_length
-        id = json["id"].intValue
-        nodeId = json["node_id"].stringValue
-        name = json["name"].stringValue
-        fullName = json["full_name"].stringValue
-        privateField = json["private"].boolValue
-        owner = UserEntity(json["owner"])
-        htmlUrl = json["html_url"].stringValue
-        description = json["description"].stringValue
-        fork = json["fork"].boolValue
-        url = json["url"].stringValue
-        forksUrl = json["forks_url"].stringValue
-        keysUrl = json["keys_url"].stringValue
-        collaboratorsUrl = json["collaborators_url"].stringValue
-        teamsUrl = json["teams_url"].stringValue
-        hooksUrl = json["hooks_url"].stringValue
-        issueEventsUrl = json["issue_events_url"].stringValue
-        eventsUrl = json["events_url"].stringValue
-        assigneesUrl = json["assignees_url"].stringValue
-        branchesUrl = json["branches_url"].stringValue
-        tagsUrl = json["tags_url"].stringValue
-        blobsUrl = json["blobs_url"].stringValue
-        gitTagsUrl = json["git_tags_url"].stringValue
-        gitRefsUrl = json["git_refs_url"].stringValue
-        treesUrl = json["trees_url"].stringValue
-        statusesUrl = json["statuses_url"].stringValue
-        languagesUrl = json["languages_url"].stringValue
-        stargazersUrl = json["stargazers_url"].stringValue
-        contributorsUrl = json["contributors_url"].stringValue
-        subscribersUrl = json["subscribers_url"].stringValue
-        subscriptionUrl = json["subscription_url"].stringValue
-        commitsUrl = json["commits_url"].stringValue
-        gitCommitsUrl = json["git_commits_url"].stringValue
-        commentsUrl = json["comments_url"].stringValue
-        issueCommentUrl = json["issue_comment_url"].stringValue
-        contentsUrl = json["contents_url"].stringValue
-        compareUrl = json["compare_url"].stringValue
-        mergesUrl = json["merges_url"].stringValue
-        archiveUrl = json["archive_url"].stringValue
-        downloadsUrl = json["downloads_url"].stringValue
-        issuesUrl = json["issues_url"].stringValue
-        pullsUrl = json["pulls_url"].stringValue
-        milestonesUrl = json["milestones_url"].stringValue
-        notificationsUrl = json["notifications_url"].stringValue
-        labelsUrl = json["labels_url"].stringValue
-        releasesUrl = json["releases_url"].stringValue
-        deploymentsUrl = json["deployments_url"].stringValue
-        createdAt = json["created_at"].stringValue
-        updatedAt = json["updated_at"].stringValue
-        pushedAt = json["pushed_at"].stringValue
-        gitUrl = json["git_url"].stringValue
-        sshUrl = json["ssh_url"].stringValue
-        cloneUrl = json["clone_url"].stringValue
-        svnUrl = json["svn_url"].stringValue
-        homepage = json["homepage"].stringValue
-        size = json["size"].intValue
-        stargazersCount = json["stargazers_count"].intValue
-        watchersCount = json["watchers_count"].intValue
-        language = json["language"].stringValue
-        hasIssues = json["has_issues"].boolValue
-        hasProjects = json["has_projects"].boolValue
-        hasDownloads = json["has_downloads"].boolValue
-        hasWiki = json["has_wiki"].boolValue
-        hasPages = json["has_pages"].boolValue
-        forksCount = json["forks_count"].intValue
-        mirrorUrl = json["mirror_url"]
-        archived = json["archived"].boolValue
-        openIssuesCount = json["open_issues_count"].intValue
-        license = json["license"]
-        forks = json["forks"].intValue
-        openIssues = json["open_issues"].intValue
-        watchers = json["watchers"].intValue
-        defaultBranch = json["default_branch"].stringValue
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case nodeId = "node_id"
+        case name
+        case fullName = "full_name"
+        case privateField = "private"
+        case owner
+        case htmlUrl = "html_url"
+        case description
+        case fork
+        case url
+        case forksUrl = "forks_url"
+        case keysUrl = "keys_url"
+        case collaboratorsUrl = "collaborators_url"
+        case teamsUrl = "teams_url"
+        case hooksUrl = "hooks_url"
+        case issueEventsUrl = "issue_events_url"
+        case eventsUrl = "events_url"
+        case assigneesUrl = "assignees_url"
+        case branchesUrl = "branches_url"
+        case tagsUrl = "tags_url"
+        case blobsUrl = "blobs_url"
+        case gitTagsUrl = "git_tags_url"
+        case gitRefsUrl = "git_refs_url"
+        case treesUrl = "trees_url"
+        case statusesUrl = "statuses_url"
+        case languagesUrl = "languages_url"
+        case stargazersUrl = "stargazers_url"
+        case contributorsUrl = "contributors_url"
+        case subscribersUrl = "subscribers_url"
+        case subscriptionUrl = "subscription_url"
+        case commitsUrl = "commits_url"
+        case gitCommitsUrl = "git_commits_url"
+        case commentsUrl = "comments_url"
+        case issueCommentUrl = "issue_comment_url"
+        case contentsUrl = "contents_url"
+        case compareUrl = "compare_url"
+        case mergesUrl = "merges_url"
+        case archiveUrl = "archive_url"
+        case downloadsUrl = "downloads_url"
+        case issuesUrl = "issues_url"
+        case pullsUrl = "pulls_url"
+        case milestonesUrl = "milestones_url"
+        case notificationsUrl = "notifications_url"
+        case labelsUrl = "labels_url"
+        case releasesUrl = "releases_url"
+        case deploymentsUrl = "deployments_url"
+        case createdAt = "created_at"
+        case updatedAt = "updated_at"
+        case pushedAt = "pushed_at"
+        case gitUrl = "git_url"
+        case sshUrl = "ssh_url"
+        case cloneUrl = "clone_url"
+        case svnUrl = "svn_url"
+        case homepage
+        case size
+        case stargazersCount = "stargazers_count"
+        case watchersCount = "watchers_count"
+        case language
+        case hasIssues = "has_issues"
+        case hasProjects = "has_projects"
+        case hasDownloads = "has_downloads"
+        case hasWiki = "has_wiki"
+        case hasPages = "has_pages"
+        case forksCount = "forks_count"
+        case mirrorUrl = "mirror_url"
+        case archived
+        case disabled
+        case openIssuesCount = "open_issues_count"
+        case license
+        case forks
+        case openIssues = "open_issues"
+        case watchers
+        case defaultBranch = "default_branch"
     }
-    
+
 }

@@ -9,24 +9,24 @@
 import Foundation
 import Alamofire
 import PromiseKit
-import SwiftyJSON
 
 class UserApiManager {
         
-    public static func getUserList(since: Int = 0) -> Promise<JSON> {
+    public static func getUserList(since: Int = 0) -> Promise<[UserEntity]> {
         
         let parameters: [String: Any] = [
             "access_token": APIConstants.accessToken,
             "since": since
         ]
         
-        return Promise<JSON> { seal in
-            Alamofire.request(APIConstants.baseUrl, method: .get, parameters: parameters).validate().responseJSON { response in
-                switch response.result {
-                case .success(let response):
-                    let json = JSON(response)
-                    seal.fulfill(json)
-                case .failure(let error):
+        return Promise<[UserEntity]> { seal in
+            Alamofire.request(APIConstants.baseUrl, method: .get, parameters: parameters).validate().response { response in
+                guard let data = response.data else { return }
+                do {
+                    let decoder = JSONDecoder()
+                    let userList = try decoder.decode([UserEntity].self, from: data)
+                    seal.fulfill(userList)
+                } catch let error {
                     seal.reject(error)
                 }
             }
@@ -34,21 +34,22 @@ class UserApiManager {
         
     }
     
-    public static func getUser(url: String) -> Promise<JSON> {
+    public static func getUser(url: String) -> Promise<UserEntity> {
         
         let parameters: [String: Any] = [
             "access_token": APIConstants.accessToken
         ]
         
-        return Promise<JSON> { seal in
-            Alamofire.request(url, method: .get, parameters: parameters).validate().responseJSON { response in
-                    switch response.result {
-                    case .success(let response):
-                        let json = JSON(response)
-                        seal.fulfill(json)
-                    case .failure(let error):
-                        seal.reject(error)
-                    }
+        return Promise<UserEntity> { seal in
+            Alamofire.request(url, method: .get, parameters: parameters).validate().response { response in
+                guard let data = response.data else { return }
+                do {
+                    let decoder = JSONDecoder()
+                    let user = try decoder.decode(UserEntity.self, from: data)
+                    seal.fulfill(user)
+                } catch let error {
+                    seal.reject(error)
+                }
             }
         }
         
