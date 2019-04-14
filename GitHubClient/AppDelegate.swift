@@ -12,6 +12,7 @@ import KRProgressHUD
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var coordinator: MainCoordinator?
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -19,6 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         KRProgressHUD.appearance().style = .custom(background: .clear, text: UIColor.darkGray, icon: UIColor.darkGray)
         KRProgressHUD.appearance().activityIndicatorColors = [UIColor.darkGray, UIColor.lightGray]
         KRProgressHUD.appearance().maskType = KRProgressHUDMaskType.white
+        
+        // Application Coordinator
+        let navigationController = UINavigationController()
+        self.coordinator = MainCoordinator(navigationController: navigationController)
+        self.coordinator?.start()
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
+        
         return true
     }
 

@@ -50,6 +50,9 @@
 		50ADFBBF222574A30037924E /* UserDetailActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBBE222574A30037924E /* UserDetailActionCreator.swift */; };
 		50ADFBC1222576F60037924E /* UserDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBC0222576F60037924E /* UserDetailReducer.swift */; };
 		50D1EAB02262E73A00CCF6CB /* LicenseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAAF2262E73A00CCF6CB /* LicenseEntity.swift */; };
+		50D1EAB32262F60500CCF6CB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAB22262F60500CCF6CB /* Coordinator.swift */; };
+		50D1EAB52262F6C700CCF6CB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAB42262F6C700CCF6CB /* MainCoordinator.swift */; };
+		50D1EAB72262F84400CCF6CB /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAB62262F84400CCF6CB /* Storyboarded.swift */; };
 		7800CF08E296A8B23115AA41 /* Pods_GitHubClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B087E36A4B21E70C1B5E54 /* Pods_GitHubClient.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +99,9 @@
 		50ADFBBE222574A30037924E /* UserDetailActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailActionCreator.swift; sourceTree = "<group>"; };
 		50ADFBC0222576F60037924E /* UserDetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailReducer.swift; sourceTree = "<group>"; };
 		50D1EAAF2262E73A00CCF6CB /* LicenseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseEntity.swift; sourceTree = "<group>"; };
+		50D1EAB22262F60500CCF6CB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		50D1EAB42262F6C700CCF6CB /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		50D1EAB62262F84400CCF6CB /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		54B087E36A4B21E70C1B5E54 /* Pods_GitHubClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9040862979A2E9C365A16413 /* Pods-GitHubClient.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubClient.staging.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubClient/Pods-GitHubClient.staging.xcconfig"; sourceTree = "<group>"; };
 		D6443030C711A42FEC00FEA7 /* Pods-GitHubClient.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubClient.develop.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubClient/Pods-GitHubClient.develop.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +154,7 @@
 				5087A0202222890B002267E1 /* Common */,
 				5087A00F2222269B002267E1 /* Model */,
 				5087A023222293DD002267E1 /* Redux */,
+				50D1EAB12262F5EF00CCF6CB /* Coordinator */,
 				50879FD022215055002267E1 /* Components */,
 				5064C043222143760042A439 /* AppDelegate.swift */,
 				5064C054222143780042A439 /* LaunchScreen.storyboard */,
@@ -288,6 +295,16 @@
 				5087A0322222E028002267E1 /* UITableViewExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		50D1EAB12262F5EF00CCF6CB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				50D1EAB22262F60500CCF6CB /* Coordinator.swift */,
+				50D1EAB62262F84400CCF6CB /* Storyboarded.swift */,
+				50D1EAB42262F6C700CCF6CB /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		61818A97E2BA5E1B7050D548 /* Frameworks */ = {
@@ -481,9 +498,12 @@
 				50ADFBB7222550430037924E /* UserDetailAction.swift in Sources */,
 				50ADFBBD222572B80037924E /* RepositoryApiManager.swift in Sources */,
 				5087A01922225E40002267E1 /* UserListAction.swift in Sources */,
+				50D1EAB32262F60500CCF6CB /* Coordinator.swift in Sources */,
+				50D1EAB52262F6C700CCF6CB /* MainCoordinator.swift in Sources */,
 				50879FF722217855002267E1 /* AppState.swift in Sources */,
 				5064C044222143760042A439 /* AppDelegate.swift in Sources */,
 				50ADFBBF222574A30037924E /* UserDetailActionCreator.swift in Sources */,
+				50D1EAB72262F84400CCF6CB /* Storyboarded.swift in Sources */,
 				5087A01B22226404002267E1 /* UserListReducer.swift in Sources */,
 				5087A00722219166002267E1 /* UserListItemCell.swift in Sources */,
 				50ADFBB522254FD60037924E /* UserDetailState.swift in Sources */,

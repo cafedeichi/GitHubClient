@@ -11,7 +11,9 @@ import ReSwift
 import KRProgressHUD
 import PullToRefresh
 
-class UserListViewController: UIViewController {
+class UserListViewController: UIViewController, Storyboarded {
+    
+    weak var coordinator: MainCoordinator?
 
     @IBOutlet weak var userListTableView: UITableView!
 
@@ -115,10 +117,7 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let viewController = UserDetailViewController(nibName: UserDetailViewController.className, bundle: nil)
-        viewController.setSelectedUserUrl(url: self.userList[indexPath.row].url!)
-        viewController.setSelectedUserRepositoryUrl(url: self.userList[indexPath.row].reposUrl!)
-        self.navigationController?.pushViewController(viewController, animated: true)
+        self.coordinator?.userDetail(user: self.userList[indexPath.row])
     }
     
 }

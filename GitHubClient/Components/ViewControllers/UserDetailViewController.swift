@@ -13,6 +13,8 @@ import SafariServices
 import PullToRefresh
 
 class UserDetailViewController: UIViewController {
+    
+    weak var coordinator: MainCoordinator?
 
     @IBOutlet weak var userDetailTableView: UITableView!
     
