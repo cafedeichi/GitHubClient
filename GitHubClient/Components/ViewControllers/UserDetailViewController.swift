@@ -9,7 +9,6 @@
 import UIKit
 import ReSwift
 import KRProgressHUD
-import SafariServices
 import PullToRefresh
 
 class UserDetailViewController: UIViewController {
@@ -210,9 +209,7 @@ extension UserDetailViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let url = URL(string: self.repositoryList[indexPath.row].htmlUrl!)!
-        let safariViewController = SFSafariViewController(url: url)
-        self.present(safariViewController, animated: true, completion: nil)
+        self.coordinator?.userWebPage(repository: self.repositoryList[indexPath.row])
     }
     
 }
