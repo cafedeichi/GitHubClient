@@ -12,8 +12,8 @@ import KRProgressHUD
 import PullToRefresh
 
 class UserDetailViewController: UIViewController {
-    
-    weak var coordinator: MainCoordinator?
+        
+    weak var coordinator: UserDetailCoordinator?
 
     @IBOutlet weak var userDetailTableView: UITableView!
     
@@ -29,7 +29,7 @@ class UserDetailViewController: UIViewController {
             self.userDetailTableView.reloadData()
         }
     }
-
+    
     fileprivate var repositoryList: [RepositoryEntity] = [] {
         didSet {
             self.userDetailTableView.reloadData()
@@ -40,7 +40,7 @@ class UserDetailViewController: UIViewController {
     fileprivate var isLoading: Bool = false {
         didSet {
             if isLoading && !KRProgressHUD.isVisible && refresher.state != .loading {
-                    KRProgressHUD.show()
+                KRProgressHUD.show()
             } else {
                 KRProgressHUD.dismiss()
             }
@@ -70,6 +70,11 @@ class UserDetailViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         store.unsubscribe(self)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.coordinator?.didFinishUserDetail()        
     }
     
     deinit {

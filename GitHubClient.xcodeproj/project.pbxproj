@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5006939C2277D1E3002A1FE5 /* UserDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5006939B2277D1E3002A1FE5 /* UserDetailCoordinator.swift */; };
 		503103312228279E0045B69F /* UserDetailFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503103302228279E0045B69F /* UserDetailFooterView.swift */; };
 		50310333222827AD0045B69F /* UserDetailFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50310332222827AD0045B69F /* UserDetailFooterView.xib */; };
 		503C169F22295DDB0067B9E5 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503C169E22295DDB0067B9E5 /* Middleware.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		11BE6ED66FBF5D7DBDC79B4B /* Pods-GitHubClient.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubClient.production.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubClient/Pods-GitHubClient.production.xcconfig"; sourceTree = "<group>"; };
+		5006939B2277D1E3002A1FE5 /* UserDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCoordinator.swift; sourceTree = "<group>"; };
 		503103302228279E0045B69F /* UserDetailFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailFooterView.swift; sourceTree = "<group>"; };
 		50310332222827AD0045B69F /* UserDetailFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailFooterView.xib; sourceTree = "<group>"; };
 		503C169E22295DDB0067B9E5 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 			children = (
 				50D1EAB22262F60500CCF6CB /* Coordinator.swift */,
 				50D1EAB42262F6C700CCF6CB /* MainCoordinator.swift */,
+				5006939B2277D1E3002A1FE5 /* UserDetailCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				50ADFBB7222550430037924E /* UserDetailAction.swift in Sources */,
 				50ADFBBD222572B80037924E /* RepositoryApiManager.swift in Sources */,
 				5087A01922225E40002267E1 /* UserListAction.swift in Sources */,
+				5006939C2277D1E3002A1FE5 /* UserDetailCoordinator.swift in Sources */,
 				50D1EAB32262F60500CCF6CB /* Coordinator.swift in Sources */,
 				50D1EAB52262F6C700CCF6CB /* MainCoordinator.swift in Sources */,
 				50879FF722217855002267E1 /* AppState.swift in Sources */,

@@ -6,9 +6,7 @@
 //  Copyright © 2019 Cafe De Ichi. All rights reserved.
 //
 
-import Foundation
 import UIKit
-import SafariServices
 
 class MainCoordinator: Coordinator {
     
@@ -26,17 +24,18 @@ class MainCoordinator: Coordinator {
     }
     
     func userDetail(user: UserEntity) {
-        let viewController = UserDetailViewController(nibName: UserDetailViewController.className, bundle: nil)
-        viewController.setSelectedUserUrl(url: user.url!)
-        viewController.setSelectedUserRepositoryUrl(url: user.reposUrl!)
-        viewController.coordinator = self
-        self.navigationController.pushViewController(viewController, animated: true)
+        let child = UserDetailCoordinator(navigationController: self.navigationController, user: user)
+        child.parentCoordinator = self
+        self.childCoordinators.append(child)
+        child.start()
     }
 
-    func webPage(htmlUrl: String?) {
-        let url = URL(string: htmlUrl!)!
-        let safariViewController = SFSafariViewController(url: url)
-        self.navigationController.present(safariViewController, animated: true, completion: nil)
+    func didFinishChild(_ child: Coordinator?) {
+        for (index, coordinator) in
+            childCoordinators.enumerated()
+                where coordinator === child {
+                    childCoordinators.remove(at: index)
+                    break
+        }        
     }
-
 }
