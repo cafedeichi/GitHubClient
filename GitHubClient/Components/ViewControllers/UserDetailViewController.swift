@@ -209,7 +209,7 @@ extension UserDetailViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        self.coordinator?.userWebPage(repository: self.repositoryList[indexPath.row])
+        self.coordinator?.webPage(htmlUrl: self.repositoryList[indexPath.row].htmlUrl)
     }
     
 }

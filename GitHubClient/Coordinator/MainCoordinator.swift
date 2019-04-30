@@ -33,8 +33,8 @@ class MainCoordinator: Coordinator {
         self.navigationController.pushViewController(viewController, animated: true)
     }
 
-    func userWebPage(repository: RepositoryEntity) {
-        let url = URL(string: repository.htmlUrl!)!
+    func webPage(htmlUrl: String?) {
+        let url = URL(string: htmlUrl!)!
         let safariViewController = SFSafariViewController(url: url)
         self.navigationController.present(safariViewController, animated: true, completion: nil)
     }
