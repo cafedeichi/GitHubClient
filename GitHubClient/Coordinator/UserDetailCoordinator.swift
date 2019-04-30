@@ -28,10 +28,6 @@ class UserDetailCoordinator: Coordinator {
         viewController.coordinator = self
         self.navigationController.pushViewController(viewController, animated: true)         
     }
-    
-    func didFinishUserDetail() {
-        self.parentCoordinator?.didFinishChild(self)
-    }
 
     func webPage(htmlUrl: String?) {
         let url = URL(string: htmlUrl!)!

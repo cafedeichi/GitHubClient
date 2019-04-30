@@ -71,12 +71,7 @@ class UserDetailViewController: UIViewController {
         super.viewWillDisappear(animated)
         store.unsubscribe(self)
     }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        self.coordinator?.didFinishUserDetail()        
-    }
-    
+        
     deinit {
         self.footerView.removeGestureRecognizer(self.tapGesture)
     }

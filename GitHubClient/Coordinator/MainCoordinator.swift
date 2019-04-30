@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainCoordinator: Coordinator {
+class MainCoordinator: NSObject, Coordinator, UINavigationControllerDelegate {
     
     var childCoordinators = [Coordinator]()
     var navigationController = UINavigationController()
@@ -18,6 +18,7 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
+        self.navigationController.delegate = self
         let viewController = UserListViewController.instantiate()
         viewController.coordinator = self
         self.navigationController.pushViewController(viewController, animated: true)
@@ -30,12 +31,26 @@ class MainCoordinator: Coordinator {
         child.start()
     }
 
-    func didFinishChild(_ child: Coordinator?) {
+    func childDidFinish(_ child: Coordinator?) {
         for (index, coordinator) in
             childCoordinators.enumerated()
                 where coordinator === child {
                     childCoordinators.remove(at: index)
                     break
         }        
+    }
+    
+    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
+        guard let fromViewController = navigationController.transitionCoordinator?.viewController(forKey: .from) else {
+            return
+        }
+        
+        if navigationController.viewControllers.contains(fromViewController) {
+            return
+        }
+        
+        if let viewController = fromViewController as? UserDetailViewController {
+            self.childDidFinish(viewController.coordinator)
+        }
     }
 }
