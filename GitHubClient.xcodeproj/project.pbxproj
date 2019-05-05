@@ -43,6 +43,9 @@
 		5087A02E2222DA8B002267E1 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A02D2222DA8B002267E1 /* Store.swift */; };
 		5087A0312222DFFA002267E1 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A0302222DFFA002267E1 /* NSObjectExtension.swift */; };
 		5087A0332222E028002267E1 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A0322222E028002267E1 /* UITableViewExtension.swift */; };
+		5099F934227E848D00E2A3A7 /* Assets-Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5099F933227E848D00E2A3A7 /* Assets-Constants.swift */; };
+		5099F939227E87F700E2A3A7 /* Storyboard-Segues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5099F937227E87F700E2A3A7 /* Storyboard-Segues.swift */; };
+		5099F93A227E87F700E2A3A7 /* Storyboard-Scenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5099F938227E87F700E2A3A7 /* Storyboard-Scenes.swift */; };
 		50ADFBB522254FD60037924E /* UserDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBB422254FD60037924E /* UserDetailState.swift */; };
 		50ADFBB7222550430037924E /* UserDetailAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBB6222550430037924E /* UserDetailAction.swift */; };
 		50ADFBB922256B9B0037924E /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBB822256B9B0037924E /* RepositoryEntity.swift */; };
@@ -52,7 +55,6 @@
 		50D1EAB02262E73A00CCF6CB /* LicenseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAAF2262E73A00CCF6CB /* LicenseEntity.swift */; };
 		50D1EAB32262F60500CCF6CB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAB22262F60500CCF6CB /* Coordinator.swift */; };
 		50D1EAB52262F6C700CCF6CB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAB42262F6C700CCF6CB /* MainCoordinator.swift */; };
-		50D1EAB72262F84400CCF6CB /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAB62262F84400CCF6CB /* Storyboarded.swift */; };
 		7800CF08E296A8B23115AA41 /* Pods_GitHubClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B087E36A4B21E70C1B5E54 /* Pods_GitHubClient.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +94,9 @@
 		5087A02D2222DA8B002267E1 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		5087A0302222DFFA002267E1 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		5087A0322222E028002267E1 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		5099F933227E848D00E2A3A7 /* Assets-Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets-Constants.swift"; sourceTree = "<group>"; };
+		5099F937227E87F700E2A3A7 /* Storyboard-Segues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard-Segues.swift"; sourceTree = "<group>"; };
+		5099F938227E87F700E2A3A7 /* Storyboard-Scenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard-Scenes.swift"; sourceTree = "<group>"; };
 		50ADFBB422254FD60037924E /* UserDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailState.swift; sourceTree = "<group>"; };
 		50ADFBB6222550430037924E /* UserDetailAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailAction.swift; sourceTree = "<group>"; };
 		50ADFBB822256B9B0037924E /* RepositoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEntity.swift; sourceTree = "<group>"; };
@@ -101,7 +106,6 @@
 		50D1EAAF2262E73A00CCF6CB /* LicenseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseEntity.swift; sourceTree = "<group>"; };
 		50D1EAB22262F60500CCF6CB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		50D1EAB42262F6C700CCF6CB /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		50D1EAB62262F84400CCF6CB /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		54B087E36A4B21E70C1B5E54 /* Pods_GitHubClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9040862979A2E9C365A16413 /* Pods-GitHubClient.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubClient.staging.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubClient/Pods-GitHubClient.staging.xcconfig"; sourceTree = "<group>"; };
 		D6443030C711A42FEC00FEA7 /* Pods-GitHubClient.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubClient.develop.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubClient/Pods-GitHubClient.develop.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				5064C042222143760042A439 /* GitHubClient */,
+				5099F932227E845500E2A3A7 /* Generated */,
 				5064C041222143760042A439 /* Products */,
 				E78646BDFA6263D02C88292C /* Pods */,
 				61818A97E2BA5E1B7050D548 /* Frameworks */,
@@ -293,9 +298,18 @@
 				50621E092227D02D00EF217F /* UIColorExtension.swift */,
 				5087A0302222DFFA002267E1 /* NSObjectExtension.swift */,
 				5087A0322222E028002267E1 /* UITableViewExtension.swift */,
-				50D1EAB62262F84400CCF6CB /* Storyboarded.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		5099F932227E845500E2A3A7 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				5099F933227E848D00E2A3A7 /* Assets-Constants.swift */,
+				5099F938227E87F700E2A3A7 /* Storyboard-Scenes.swift */,
+				5099F937227E87F700E2A3A7 /* Storyboard-Segues.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		50D1EAB12262F5EF00CCF6CB /* Coordinator */ = {
@@ -435,7 +449,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n";
 		};
 		F7B2D1F5A68357B0D00B6382 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -475,6 +489,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				505EB0CE22295E6D00A9E11B /* Logger.swift in Sources */,
+				5099F93A227E87F700E2A3A7 /* Storyboard-Scenes.swift in Sources */,
 				5087A0272222952E002267E1 /* UserListActionCreator.swift in Sources */,
 				50ADFBC1222576F60037924E /* UserDetailReducer.swift in Sources */,
 				50621DEF2226396500EF217F /* UserDetailViewController.swift in Sources */,
@@ -486,6 +501,7 @@
 				5087A0332222E028002267E1 /* UITableViewExtension.swift in Sources */,
 				5087A02922229E59002267E1 /* APIConstants.swift in Sources */,
 				50621E082227814200EF217F /* UserDetailSectionView.swift in Sources */,
+				5099F939227E87F700E2A3A7 /* Storyboard-Segues.swift in Sources */,
 				50621DF3222639AD00EF217F /* UserRepositoryItemCell.swift in Sources */,
 				5087A00B22219171002267E1 /* UserListViewController.swift in Sources */,
 				5087A01522225305002267E1 /* UserEntity.swift in Sources */,
@@ -494,6 +510,7 @@
 				50621E0A2227D02D00EF217F /* UIColorExtension.swift in Sources */,
 				5087A012222226EA002267E1 /* UserAPIManager.swift in Sources */,
 				5087A02E2222DA8B002267E1 /* Store.swift in Sources */,
+				5099F934227E848D00E2A3A7 /* Assets-Constants.swift in Sources */,
 				50879FF922217F3E002267E1 /* AppReducer.swift in Sources */,
 				50ADFBB7222550430037924E /* UserDetailAction.swift in Sources */,
 				50ADFBBD222572B80037924E /* RepositoryApiManager.swift in Sources */,
@@ -503,7 +520,6 @@
 				50879FF722217855002267E1 /* AppState.swift in Sources */,
 				5064C044222143760042A439 /* AppDelegate.swift in Sources */,
 				50ADFBBF222574A30037924E /* UserDetailActionCreator.swift in Sources */,
-				50D1EAB72262F84400CCF6CB /* Storyboarded.swift in Sources */,
 				5087A01B22226404002267E1 /* UserListReducer.swift in Sources */,
 				5087A00722219166002267E1 /* UserListItemCell.swift in Sources */,
 				50ADFBB522254FD60037924E /* UserDetailState.swift in Sources */,

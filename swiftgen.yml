@@ -1,0 +1,16 @@
+input_dir: GitHubClient
+output_dir: Generated
+xcassets:
+  - inputs: Assets.xcassets
+    outputs:
+      - templateName: swift4
+        output: Assets-Constants.swift
+        params:
+          enumName: Assets
+ib:
+  - inputs: Components/
+    outputs:
+      - templateName: scenes-swift4
+        output: Storyboard-Scenes.swift
+      - templateName: segues-swift4
+        output: Storyboard-Segues.swift

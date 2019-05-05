@@ -16,6 +16,7 @@ PODS:
     - PromiseKit/CorePromise
   - PullToRefresher (3.1)
   - ReSwift (4.0.1)
+  - SwiftGen (6.1.0)
   - SwiftLint (0.29.1)
 
 DEPENDENCIES:
@@ -25,6 +26,7 @@ DEPENDENCIES:
   - PromiseKit (~> 6.7.0)
   - PullToRefresher (~> 3.1)
   - ReSwift (~> 4.0.1)
+  - SwiftGen (~> 6.1.0)
   - SwiftLint (~> 0.29.1)
 
 SPEC REPOS:
@@ -36,6 +38,7 @@ SPEC REPOS:
     - PromiseKit
     - PullToRefresher
     - ReSwift
+    - SwiftGen
     - SwiftLint
 
 SPEC CHECKSUMS:
@@ -46,8 +49,9 @@ SPEC CHECKSUMS:
   PromiseKit: 453ddcc947fe7b302f3ef41882b81d31c554df7f
   PullToRefresher: ec8c1942bd61bb512ff520c49f9f00903cfa86c7
   ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
 
-PODFILE CHECKSUM: f7617f0efe9b5ab42169e5db624d1e56fc8d73d5
+PODFILE CHECKSUM: bfd3e6da0a6d222cc0a10c0c7be00aa253bfbf4f
 
 COCOAPODS: 1.6.1

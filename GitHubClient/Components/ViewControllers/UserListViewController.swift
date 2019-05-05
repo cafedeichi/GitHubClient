@@ -11,7 +11,7 @@ import ReSwift
 import KRProgressHUD
 import PullToRefresh
 
-class UserListViewController: UIViewController, Storyboarded {
+class UserListViewController: UIViewController {
     
     weak var coordinator: MainCoordinator?
 

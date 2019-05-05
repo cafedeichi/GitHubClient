@@ -11,6 +11,7 @@ target 'GitHubClient' do
   pod 'PromiseKit', '~>6.7.0'
   pod 'KRProgressHUD', '~>3.4.0'
   pod 'PullToRefresher', '~>3.1'
+  pod 'SwiftGen', '~> 6.1.0'
   
 end
 

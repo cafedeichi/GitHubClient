@@ -112,7 +112,7 @@ class UserDetailViewController: UIViewController {
         
         self.navigationItem.title = "User Profile"
         
-        self.backArrowButton = UIBarButtonItem(image: UIImage(named: "back"),
+        self.backArrowButton = UIBarButtonItem(image: Assets.back.image,
                                           style: UIBarButtonItem.Style.plain,
                                           target: self,
                                           action: #selector(UserDetailViewController.barButtonItemTapped(_:)))

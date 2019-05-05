@@ -20,7 +20,7 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = UserListViewController.instantiate()
+        let viewController = StoryboardScene.Main.userListViewController.instantiate()
         viewController.coordinator = self
         self.navigationController.pushViewController(viewController, animated: true)
     }
