@@ -1,33 +1,33 @@
 PODS:
-  - Alamofire (4.8.0)
-  - AlamofireImage (3.5.0):
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
     - Alamofire (~> 4.8)
-  - KRActivityIndicatorView (3.0.0)
-  - KRProgressHUD (3.4.0):
-    - KRActivityIndicatorView (= 3.0.0)
-  - PromiseKit (6.7.0):
-    - PromiseKit/CorePromise (= 6.7.0)
-    - PromiseKit/Foundation (= 6.7.0)
-    - PromiseKit/UIKit (= 6.7.0)
-  - PromiseKit/CorePromise (6.7.0)
-  - PromiseKit/Foundation (6.7.0):
+  - KRActivityIndicatorView (3.0.2)
+  - KRProgressHUD (3.4.1):
+    - KRActivityIndicatorView (= 3.0.2)
+  - PromiseKit (6.8.4):
+    - PromiseKit/CorePromise (= 6.8.4)
+    - PromiseKit/Foundation (= 6.8.4)
+    - PromiseKit/UIKit (= 6.8.4)
+  - PromiseKit/CorePromise (6.8.4)
+  - PromiseKit/Foundation (6.8.4):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.7.0):
+  - PromiseKit/UIKit (6.8.4):
     - PromiseKit/CorePromise
   - PullToRefresher (3.1)
-  - ReSwift (4.0.1)
+  - ReSwift (4.1.1)
   - SwiftGen (6.1.0)
-  - SwiftLint (0.29.1)
+  - SwiftLint (0.32.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.8.0)
-  - AlamofireImage (~> 3.5.0)
-  - KRProgressHUD (~> 3.4.0)
-  - PromiseKit (~> 6.7.0)
-  - PullToRefresher (~> 3.1)
-  - ReSwift (~> 4.0.1)
+  - Alamofire (~> 4.8.2)
+  - AlamofireImage (~> 3.5.2)
+  - KRProgressHUD (~> 3.4.1)
+  - PromiseKit (~> 6.8.4)
+  - PullToRefresher (~> 3.1.0)
+  - ReSwift (~> 4.1.1)
   - SwiftGen (~> 6.1.0)
-  - SwiftLint (~> 0.29.1)
+  - SwiftLint (~> 0.32.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -42,16 +42,16 @@ SPEC REPOS:
     - SwiftLint
 
 SPEC CHECKSUMS:
-  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
-  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
-  KRActivityIndicatorView: c414000730a6f4969eeb354bee4f2aebc89c2c2e
-  KRProgressHUD: 79c8703f82179fe34b3602f10b30726f887983fa
-  PromiseKit: 453ddcc947fe7b302f3ef41882b81d31c554df7f
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  KRActivityIndicatorView: a2022d5d3e366207d2690f6bcc550f83aa91241b
+  KRProgressHUD: 115363b48feb530ab1f36c4146ed22e779e0f5aa
+  PromiseKit: 51794a832647e7b819336dc2279039ce9f1cc49b
   PullToRefresher: ec8c1942bd61bb512ff520c49f9f00903cfa86c7
-  ReSwift: f4012c613e13da7398827fe5aebdb938eaed40a3
+  ReSwift: d925be0033558f55bd73d92869961230dfe19d52
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
-  SwiftLint: 6772320e40b52049053a518c17db9b0634a0b45a
+  SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
 
-PODFILE CHECKSUM: bfd3e6da0a6d222cc0a10c0c7be00aa253bfbf4f
+PODFILE CHECKSUM: 0d4f101496a9e6340176655536927dceccf75884
 
 COCOAPODS: 1.6.1

@@ -374,6 +374,7 @@
 				TargetAttributes = {
 					5064C03F222143760042A439 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -669,7 +670,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cafedeichi.GitHubClient$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Develop;
@@ -688,7 +689,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cafedeichi.GitHubClient$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Production;
@@ -770,7 +771,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cafedeichi.GitHubClient$(BUNDLE_ID_SUFFIX)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};

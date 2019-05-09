@@ -4,14 +4,14 @@ target 'GitHubClient' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'ReSwift', '~> 4.0.1'
-  pod 'SwiftLint', '~> 0.29.1'
-  pod 'Alamofire', '~> 4.8.0'
-  pod 'AlamofireImage', '~> 3.5.0'
-  pod 'PromiseKit', '~>6.7.0'
-  pod 'KRProgressHUD', '~>3.4.0'
-  pod 'PullToRefresher', '~>3.1'
+  pod 'Alamofire', '~> 4.8.2'
+  pod 'AlamofireImage', '~> 3.5.2'
+  pod 'KRProgressHUD', '~>3.4.1'
+  pod 'PromiseKit', '~>6.8.4'
+  pod 'PullToRefresher', '~>3.1.0'
+  pod 'ReSwift', '~> 4.1.1'
   pod 'SwiftGen', '~> 6.1.0'
+  pod 'SwiftLint', '~> 0.32.0'
   
 end
 
