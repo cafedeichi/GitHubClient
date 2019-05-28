@@ -22,7 +22,7 @@ class MainCoordinator: Coordinator {
     func start() {
         let viewController = StoryboardScene.Main.userListViewController.instantiate()
         viewController.coordinator = self
-        self.navigationController.pushViewController(viewController, animated: true)
+        self.navigationController.setViewControllers([viewController], animated: false)
     }
     
     func userDetail(user: UserEntity) {
