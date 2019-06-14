@@ -16,6 +16,25 @@ class APIManager {
     private let retrier: APIManagerRetrier
     static let networkEnviroment: NetworkEnvironment = .dev
     
+    private static var sharedApiManager: APIManager = {
+        let apiManager = APIManager(sessionManager: SessionManager(), retrier: APIManagerRetrier())
+        return apiManager
+    }()
+    
+    // MARK: - Initialization
+    
+    private init(sessionManager: SessionManager, retrier: APIManagerRetrier) {
+        self.sessionManager = sessionManager
+        self.retrier = retrier
+        self.sessionManager.retrier = self.retrier
+    }
+    
+    // MARK: - Accessors
+    
+    class func shared() -> APIManager {
+        return sharedApiManager
+    }
+    
     // MARK: - Public methods
     
     func call(type: EndPointType, params: Parameters? = nil, handler: @escaping (Swift.Result<(), AlertMessage>) -> Void) {
@@ -69,13 +88,5 @@ class APIManager {
         }
         return AlertMessage(title: Constants.errorAlertTitle, body: Constants.genericErrorMessage)
     }
-    
-    // MARK: - Initialization
-    
-    init(sessionManager: SessionManager, retrier: APIManagerRetrier) {
-        self.sessionManager = sessionManager
-        self.retrier = retrier
-        self.sessionManager.retrier = self.retrier
-    }
-    
+
 }
