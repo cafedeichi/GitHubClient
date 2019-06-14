@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Alamofire
 import PromiseKit
 
 class RepositoryUseCase {
@@ -15,7 +14,6 @@ class RepositoryUseCase {
     public static func getList(login: String, page: Int = 0) -> Promise<[RepositoryEntity]> {
         
         let parameters: [String: Any] = [
-            "access_token": Constants.accessToken,
             "page": page
         ]
         

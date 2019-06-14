@@ -17,7 +17,9 @@ class APIManager {
     static let networkEnviroment: NetworkEnvironment = .dev
     
     private static var sharedApiManager: APIManager = {
-        let apiManager = APIManager(sessionManager: SessionManager(), retrier: APIManagerRetrier())
+        let sessionManager = SessionManager()
+        sessionManager.adapter = APIManagerAdapter(accessToken: Constants.accessToken)
+        let apiManager = APIManager(sessionManager: sessionManager, retrier: APIManagerRetrier())
         return apiManager
     }()
     

@@ -57,7 +57,7 @@
 		50D51B6C22B3291C00506BB0 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6A22B3291B00506BB0 /* AlertMessage.swift */; };
 		50D51B6D22B3291C00506BB0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6B22B3291B00506BB0 /* NetworkError.swift */; };
 		50D51B7022B329E000506BB0 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6F22B329DF00506BB0 /* EndPointType.swift */; };
-		50D51B7222B32ABE00506BB0 /* EndpointItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B7122B32ABD00506BB0 /* EndpointItems.swift */; };
+		50D51B7222B32ABE00506BB0 /* EndPointItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B7122B32ABD00506BB0 /* EndPointItems.swift */; };
 		50D51B7622B32F3200506BB0 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B7522B32F3200506BB0 /* ParameterEncoding.swift */; };
 		50D51B7822B32F7E00506BB0 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B7722B32F7E00506BB0 /* ApiManager.swift */; };
 		50D51B7A22B32F9E00506BB0 /* ApiManagerRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B7922B32F9E00506BB0 /* ApiManagerRetrier.swift */; };
@@ -116,7 +116,7 @@
 		50D51B6A22B3291B00506BB0 /* AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
 		50D51B6B22B3291B00506BB0 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		50D51B6F22B329DF00506BB0 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
-		50D51B7122B32ABD00506BB0 /* EndpointItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointItems.swift; sourceTree = "<group>"; };
+		50D51B7122B32ABD00506BB0 /* EndPointItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointItems.swift; sourceTree = "<group>"; };
 		50D51B7522B32F3200506BB0 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
 		50D51B7722B32F7E00506BB0 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		50D51B7922B32F9E00506BB0 /* ApiManagerRetrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManagerRetrier.swift; sourceTree = "<group>"; };
@@ -367,7 +367,7 @@
 		50D51B6E22B329DF00506BB0 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
-				50D51B7122B32ABD00506BB0 /* EndpointItems.swift */,
+				50D51B7122B32ABD00506BB0 /* EndPointItems.swift */,
 				50D51B6F22B329DF00506BB0 /* EndPointType.swift */,
 				50D51B7522B32F3200506BB0 /* ParameterEncoding.swift */,
 			);
@@ -589,7 +589,7 @@
 				50621DF3222639AD00EF217F /* UserRepositoryItemCell.swift in Sources */,
 				5087A00B22219171002267E1 /* UserListViewController.swift in Sources */,
 				50D51B6D22B3291C00506BB0 /* NetworkError.swift in Sources */,
-				50D51B7222B32ABE00506BB0 /* EndpointItems.swift in Sources */,
+				50D51B7222B32ABE00506BB0 /* EndPointItems.swift in Sources */,
 				5087A01522225305002267E1 /* UserEntity.swift in Sources */,
 				503C169F22295DDB0067B9E5 /* Middleware.swift in Sources */,
 				50D51B8022B33B6300506BB0 /* APIManagerAdapter.swift in Sources */,

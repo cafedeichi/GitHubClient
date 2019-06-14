@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Alamofire
 import PromiseKit
 
 class UserUseCase {
@@ -15,7 +14,6 @@ class UserUseCase {
     public static func getList(since: Int = 0) -> Promise<[UserEntity]> {
         
         let parameters: [String: Any] = [
-            "access_token": Constants.accessToken,
             "since": since
         ]
         
@@ -35,13 +33,8 @@ class UserUseCase {
     
     public static func get(login: String) -> Promise<UserEntity> {
         
-        let parameters: [String: Any] = [
-            "access_token": Constants.accessToken
-        ]
-        
         return Promise<UserEntity> { seal in
-            APIManager.shared().call(type: EndPointItemsType.getUser(login: login),
-                                     parameters: parameters) { (response: Swift.Result<UserEntity, AlertMessage>) in
+            APIManager.shared().call(type: EndPointItemsType.getUser(login: login)) { (response: Swift.Result<UserEntity, AlertMessage>) in
                 switch response {
                 case .success(let user):
                     seal.fulfill(user)
