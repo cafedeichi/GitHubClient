@@ -18,7 +18,8 @@ enum NetworkEnvironment {
 
 enum EndPointItemsType {
     case getUsers
-    case getUser
+    case getUser(login: String)
+    case getUserRepository(login: String)
 }
 
 // MARK: - Extensions
@@ -31,11 +32,11 @@ extension EndPointItemsType: EndPointType {
     var baseURL: String {
         switch APIManager.networkEnviroment {
         case .dev:
-            return "https://api.github.com/users"
+            return "https://api.github.com/"
         case .production:
-            return "https://api.github.com/users"
+            return "https://api.github.com/"
         case .stage:
-            return "https://api.github.com/users"
+            return "https://api.github.com/"
         }
     }
     
@@ -47,8 +48,10 @@ extension EndPointItemsType: EndPointType {
         switch self {
         case .getUsers:
             return "users"
-        case .getUser:
-            return "users"
+        case .getUser(let login):
+            return "users/\(login)"
+        case .getUserRepository(let login):
+            return "users/\(login)/repos"
         }
     }
     
@@ -75,9 +78,11 @@ extension EndPointItemsType: EndPointType {
     }
     
     var encoding: ParameterEncoding {
-        switch self {
-        default:
+        switch self.httpMethod {
+        case .post:
             return JSONEncoding.default
+        default:
+            return URLEncoding.default
         }
     }
     

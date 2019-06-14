@@ -27,8 +27,7 @@ class MainCoordinator: Coordinator {
     
     func userDetail(user: UserEntity) {
         let viewController = UserDetailViewController(nibName: UserDetailViewController.className, bundle: nil)
-        viewController.setSelectedUserUrl(url: user.url!)
-        viewController.setSelectedUserRepositoryUrl(url: user.reposUrl!)
+        viewController.setSelectedUser(user: user)
         viewController.coordinator = self
         self.navigationController.pushViewController(viewController, animated: true)
     }

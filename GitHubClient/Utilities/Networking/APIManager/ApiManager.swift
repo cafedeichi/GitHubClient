@@ -37,10 +37,10 @@ class APIManager {
     
     // MARK: - Public methods
     
-    func call(type: EndPointType, params: Parameters? = nil, handler: @escaping (Swift.Result<(), AlertMessage>) -> Void) {
+    func call(type: EndPointType, parameters: Parameters? = nil, handler: @escaping (Swift.Result<(), AlertMessage>) -> Void) {
         self.sessionManager.request(type.url,
                                     method: type.httpMethod,
-                                    parameters: params,
+                                    parameters: parameters,
                                     encoding: type.encoding,
                                     headers: type.headers).validate().responseJSON { (data) in
                                         switch data.result {
@@ -52,10 +52,10 @@ class APIManager {
         }
     }
     
-    func call<T>(type: EndPointType, params: Parameters? = nil, handler: @escaping (Swift.Result<T, AlertMessage>) -> Void) where T: Codable {
+    func call<T>(type: EndPointType, parameters: Parameters? = nil, handler: @escaping (Swift.Result<T, AlertMessage>) -> Void) where T: Codable {
         self.sessionManager.request(type.url,
                                     method: type.httpMethod,
-                                    parameters: params,
+                                    parameters: parameters,
                                     encoding: type.encoding,
                                     headers: type.headers).validate().responseJSON { (data) in
                                         do {
@@ -69,7 +69,6 @@ class APIManager {
                                             if let error = error as? AlertMessage {
                                                 return handler(.failure(error))
                                             }
-                                            
                                             handler(.failure(self.parseApiError(data: data.data)))
                                         }
         }

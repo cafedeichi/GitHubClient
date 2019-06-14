@@ -21,8 +21,7 @@ class UserDetailViewController: UIViewController {
     
     fileprivate var backArrowButton: UIBarButtonItem!
 
-    fileprivate var selectedUserUrl: String! = nil
-    fileprivate var selectedUserRepositoryUrl: String! = nil
+    fileprivate var selectedUser: UserEntity!
 
     fileprivate var user: UserEntity! = nil {
         didSet {
@@ -99,12 +98,12 @@ class UserDetailViewController: UIViewController {
         self.userDetailTableView.tableFooterView = self.footerView
         
         self.userDetailTableView.addPullToRefresh(refresher) {
-            UserDetailActionCreator.fetchUser(url: self.selectedUserUrl!)
-            UserDetailActionCreator.fetchRepositoryList(reposUrl: self.selectedUserRepositoryUrl, refresh: true)
+            UserDetailActionCreator.fetchUser(login: self.selectedUser.login)
+            UserDetailActionCreator.fetchRepositoryList(login: self.selectedUser.login, refresh: true)
         }
         
-        UserDetailActionCreator.fetchUser(url: self.selectedUserUrl!)
-        UserDetailActionCreator.fetchRepositoryList(reposUrl: self.selectedUserRepositoryUrl)
+        UserDetailActionCreator.fetchUser(login: self.selectedUser.login)
+        UserDetailActionCreator.fetchRepositoryList(login: self.selectedUser.login)
         
     }
     
@@ -133,15 +132,11 @@ class UserDetailViewController: UIViewController {
     }
     
     @objc fileprivate func viewTapped(_ sender: UIGestureRecognizer? = nil) {
-        UserDetailActionCreator.fetchRepositoryList(reposUrl: self.selectedUserRepositoryUrl, page: self.page, loadMore: true)
+        UserDetailActionCreator.fetchRepositoryList(login: self.selectedUser.login, page: self.page, loadMore: true)
     }
     
-    func setSelectedUserUrl(url: String) {
-        self.selectedUserUrl = url
-    }
-
-    func setSelectedUserRepositoryUrl(url: String) {
-        self.selectedUserRepositoryUrl = url
+    func setSelectedUser(user: UserEntity) {
+        self.selectedUser = user
     }
 
 }
