@@ -31,7 +31,7 @@
 		5087A00822219166002267E1 /* UserListItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5087A00622219166002267E1 /* UserListItemCell.xib */; };
 		5087A00B22219171002267E1 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A00922219171002267E1 /* UserListViewController.swift */; };
 		5087A00E222192EE002267E1 /* UserListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A00D222192EE002267E1 /* UserListState.swift */; };
-		5087A012222226EA002267E1 /* UserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A011222226EA002267E1 /* UserUseCase.swift */; };
+		5087A012222226EA002267E1 /* UserDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A011222226EA002267E1 /* UserDataStore.swift */; };
 		5087A01522225305002267E1 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A01422225305002267E1 /* UserEntity.swift */; };
 		5087A01922225E40002267E1 /* UserListAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A01822225E40002267E1 /* UserListAction.swift */; };
 		5087A01B22226404002267E1 /* UserListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087A01A22226404002267E1 /* UserListReducer.swift */; };
@@ -44,7 +44,7 @@
 		50ADFBB522254FD60037924E /* UserDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBB422254FD60037924E /* UserDetailState.swift */; };
 		50ADFBB7222550430037924E /* UserDetailAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBB6222550430037924E /* UserDetailAction.swift */; };
 		50ADFBB922256B9B0037924E /* RepositoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBB822256B9B0037924E /* RepositoryEntity.swift */; };
-		50ADFBBD222572B80037924E /* RepositoryUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBBC222572B80037924E /* RepositoryUseCase.swift */; };
+		50ADFBBD222572B80037924E /* RepositoryDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBBC222572B80037924E /* RepositoryDataStore.swift */; };
 		50ADFBBF222574A30037924E /* UserDetailActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBBE222574A30037924E /* UserDetailActionCreator.swift */; };
 		50ADFBC1222576F60037924E /* UserDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBC0222576F60037924E /* UserDetailReducer.swift */; };
 		50D1EAB02262E73A00CCF6CB /* LicenseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAAF2262E73A00CCF6CB /* LicenseEntity.swift */; };
@@ -90,7 +90,7 @@
 		5087A00622219166002267E1 /* UserListItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserListItemCell.xib; sourceTree = "<group>"; };
 		5087A00922219171002267E1 /* UserListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		5087A00D222192EE002267E1 /* UserListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListState.swift; sourceTree = "<group>"; };
-		5087A011222226EA002267E1 /* UserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUseCase.swift; sourceTree = "<group>"; };
+		5087A011222226EA002267E1 /* UserDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataStore.swift; sourceTree = "<group>"; };
 		5087A01422225305002267E1 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		5087A01822225E40002267E1 /* UserListAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListAction.swift; sourceTree = "<group>"; };
 		5087A01A22226404002267E1 /* UserListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListReducer.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		50ADFBB422254FD60037924E /* UserDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailState.swift; sourceTree = "<group>"; };
 		50ADFBB6222550430037924E /* UserDetailAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailAction.swift; sourceTree = "<group>"; };
 		50ADFBB822256B9B0037924E /* RepositoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryEntity.swift; sourceTree = "<group>"; };
-		50ADFBBC222572B80037924E /* RepositoryUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryUseCase.swift; sourceTree = "<group>"; };
+		50ADFBBC222572B80037924E /* RepositoryDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDataStore.swift; sourceTree = "<group>"; };
 		50ADFBBE222574A30037924E /* UserDetailActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailActionCreator.swift; sourceTree = "<group>"; };
 		50ADFBC0222576F60037924E /* UserDetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailReducer.swift; sourceTree = "<group>"; };
 		50D1EAAF2262E73A00CCF6CB /* LicenseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseEntity.swift; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 			children = (
 				50D51B5F22B3262000506BB0 /* Extensions */,
 				5087A00F2222269B002267E1 /* Models */,
-				5087A010222226CA002267E1 /* UseCases */,
+				5087A010222226CA002267E1 /* DataStores */,
 				50D51B5D22B3262000506BB0 /* Utilities */,
 				5087A023222293DD002267E1 /* Redux */,
 				50D1EAB12262F5EF00CCF6CB /* Coordinators */,
@@ -259,13 +259,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		5087A010222226CA002267E1 /* UseCases */ = {
+		5087A010222226CA002267E1 /* DataStores */ = {
 			isa = PBXGroup;
 			children = (
-				5087A011222226EA002267E1 /* UserUseCase.swift */,
-				50ADFBBC222572B80037924E /* RepositoryUseCase.swift */,
+				5087A011222226EA002267E1 /* UserDataStore.swift */,
+				50ADFBBC222572B80037924E /* RepositoryDataStore.swift */,
 			);
-			path = UseCases;
+			path = DataStores;
 			sourceTree = "<group>";
 		};
 		5087A0132222522A002267E1 /* Entitties */ = {
@@ -594,14 +594,14 @@
 				503C169F22295DDB0067B9E5 /* Middleware.swift in Sources */,
 				50D51B8022B33B6300506BB0 /* APIManagerAdapter.swift in Sources */,
 				50D1EAB02262E73A00CCF6CB /* LicenseEntity.swift in Sources */,
-				5087A012222226EA002267E1 /* UserUseCase.swift in Sources */,
+				5087A012222226EA002267E1 /* UserDataStore.swift in Sources */,
 				5087A02E2222DA8B002267E1 /* Store.swift in Sources */,
 				50D51B7022B329E000506BB0 /* EndPointType.swift in Sources */,
 				5099F934227E848D00E2A3A7 /* Assets-Constants.swift in Sources */,
 				50D51B6822B3262000506BB0 /* NSObjectExtension.swift in Sources */,
 				50879FF922217F3E002267E1 /* AppReducer.swift in Sources */,
 				50ADFBB7222550430037924E /* UserDetailAction.swift in Sources */,
-				50ADFBBD222572B80037924E /* RepositoryUseCase.swift in Sources */,
+				50ADFBBD222572B80037924E /* RepositoryDataStore.swift in Sources */,
 				5087A01922225E40002267E1 /* UserListAction.swift in Sources */,
 				50D51B6722B3262000506BB0 /* UITableViewExtension.swift in Sources */,
 				50D1EAB32262F60500CCF6CB /* Coordinator.swift in Sources */,

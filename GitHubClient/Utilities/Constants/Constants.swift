@@ -12,8 +12,8 @@ class Constants {
     
     // MARK: - API
     static let baseURL = "https://api.github.com/"
-    // TODO: write your public access token.
-    static let accessToken = ""
+    // TODO: Write your public access token.
+    static let accessToken = "c27cca8e3bc16f088ed16e4ee20ab500f0b9a9fe"
     
     // MARK: - Alerts
     

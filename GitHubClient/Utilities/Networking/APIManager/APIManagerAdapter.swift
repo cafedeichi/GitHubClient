@@ -18,7 +18,7 @@ final class APIManagerAdapter: RequestAdapter {
     func adapt(_ urlRequest: URLRequest) throws -> URLRequest {
         var urlRequest = urlRequest
         if let urlString = urlRequest.url?.absoluteString, urlString.hasPrefix(Constants.baseURL) {
-            /// Set the Authorization header value using the access token.
+            // TODO: Set the Authorization header value using the access token.            
             urlRequest.setValue("token " + accessToken, forHTTPHeaderField: "Authorization")
         }        
         return urlRequest

@@ -15,7 +15,7 @@ struct UserDetailActionCreator {
         
         store.dispatch(UserDetailState.UserDetailAction.load)
         
-        UserUseCase.get(login: login).done { user in
+        UserDataStore.get(login: login).done { user in
             store.dispatch(UserDetailState.UserDetailAction.loadedUser(user: user))
             }.catch { (error) in
                 store.dispatch(UserDetailState.UserDetailAction.failure(error: error))
@@ -29,7 +29,7 @@ struct UserDetailActionCreator {
         
         store.dispatch(UserDetailState.UserDetailAction.load)
         
-        RepositoryUseCase.getList(login: login, page: nextPage).done { (repositoryList) in
+        RepositoryDataStore.getList(login: login, page: nextPage).done { (repositoryList) in
             
             let filteredRepositoryList = repositoryList.filter({ (repository) -> Bool in
                 repository.fork == false
