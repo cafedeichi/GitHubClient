@@ -20,7 +20,11 @@ final class APIManagerAdapter: RequestAdapter {
         if let urlString = urlRequest.url?.absoluteString, urlString.hasPrefix(Constants.baseURL) {
             // TODO: Set the Authorization header value using the access token.            
             urlRequest.setValue("token " + accessToken, forHTTPHeaderField: "Authorization")
-        }        
+        }
+        
+        // Print each outgoing request.
+        Logger.debugPrint("Running request: \(urlRequest.httpMethod ?? "") - \(urlRequest.url?.absoluteString ?? "")")
+        
         return urlRequest
     }
 }
