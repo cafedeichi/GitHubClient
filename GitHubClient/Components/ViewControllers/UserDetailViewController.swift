@@ -8,7 +8,6 @@
 
 import UIKit
 import ReSwift
-import KRProgressHUD
 import PullToRefresh
 
 class UserDetailViewController: UIViewController {
@@ -38,11 +37,7 @@ class UserDetailViewController: UIViewController {
     
     fileprivate var isLoading: Bool = false {
         didSet {
-            if isLoading && !KRProgressHUD.isVisible && refresher.state != .loading {
-                    KRProgressHUD.show()
-            } else {
-                KRProgressHUD.dismiss()
-            }
+            self.showLoader(isLoading: (isLoading && refresher.state != .loading))
         }
     }
     

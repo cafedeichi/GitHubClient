@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		503103312228279E0045B69F /* UserDetailFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503103302228279E0045B69F /* UserDetailFooterView.swift */; };
 		50310333222827AD0045B69F /* UserDetailFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50310332222827AD0045B69F /* UserDetailFooterView.xib */; };
+		5032971F22B73B2200979438 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5032971E22B73B2200979438 /* UIViewController.swift */; };
 		503C169F22295DDB0067B9E5 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503C169E22295DDB0067B9E5 /* Middleware.swift */; };
 		50621DEF2226396500EF217F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50621DED2226396500EF217F /* UserDetailViewController.swift */; };
 		50621DF02226396500EF217F /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50621DEE2226396500EF217F /* UserDetailViewController.xib */; };
@@ -70,6 +71,7 @@
 		11BE6ED66FBF5D7DBDC79B4B /* Pods-GitHubClient.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubClient.production.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubClient/Pods-GitHubClient.production.xcconfig"; sourceTree = "<group>"; };
 		503103302228279E0045B69F /* UserDetailFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailFooterView.swift; sourceTree = "<group>"; };
 		50310332222827AD0045B69F /* UserDetailFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailFooterView.xib; sourceTree = "<group>"; };
+		5032971E22B73B2200979438 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		503C169E22295DDB0067B9E5 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
 		50621DED2226396500EF217F /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		50621DEE2226396500EF217F /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 			children = (
 				50D51B6122B3262000506BB0 /* UIColorExtension.swift */,
 				50D51B6222B3262000506BB0 /* UITableViewExtension.swift */,
+				5032971E22B73B2200979438 /* UIViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				503103312228279E0045B69F /* UserDetailFooterView.swift in Sources */,
 				50D51B6C22B3291C00506BB0 /* AlertMessage.swift in Sources */,
 				50D51B7822B32F7E00506BB0 /* ApiManager.swift in Sources */,
+				5032971F22B73B2200979438 /* UIViewController.swift in Sources */,
 				50621E082227814200EF217F /* UserDetailSectionView.swift in Sources */,
 				5099F939227E87F700E2A3A7 /* Storyboard-Segues.swift in Sources */,
 				50D51B7A22B32F9E00506BB0 /* ApiManagerRetrier.swift in Sources */,
