@@ -17,6 +17,7 @@ class MainCoordinator: Coordinator {
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+        self.navigationController.navigationBar.tintColor = Assets.tungsten.color
     }
     
     func start() {
@@ -35,6 +36,7 @@ class MainCoordinator: Coordinator {
     func webPage(htmlUrl: String?) {
         let url = URL(string: htmlUrl!)!
         let safariViewController = SFSafariViewController(url: url)
+        safariViewController.preferredControlTintColor = Assets.tungsten.color
         self.navigationController.present(safariViewController, animated: true, completion: nil)
     }
 

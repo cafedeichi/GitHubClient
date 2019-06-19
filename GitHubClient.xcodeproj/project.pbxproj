@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		503103312228279E0045B69F /* UserDetailFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503103302228279E0045B69F /* UserDetailFooterView.swift */; };
 		50310333222827AD0045B69F /* UserDetailFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50310332222827AD0045B69F /* UserDetailFooterView.xib */; };
-		5032971F22B73B2200979438 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5032971E22B73B2200979438 /* UIViewController.swift */; };
+		5032971F22B73B2200979438 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5032971E22B73B2200979438 /* UIViewControllerExtension.swift */; };
 		503C169F22295DDB0067B9E5 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503C169E22295DDB0067B9E5 /* Middleware.swift */; };
 		50621DEF2226396500EF217F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50621DED2226396500EF217F /* UserDetailViewController.swift */; };
 		50621DF02226396500EF217F /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50621DEE2226396500EF217F /* UserDetailViewController.xib */; };
@@ -52,7 +52,7 @@
 		50D1EAB32262F60500CCF6CB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAB22262F60500CCF6CB /* Coordinator.swift */; };
 		50D1EAB52262F6C700CCF6CB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAB42262F6C700CCF6CB /* MainCoordinator.swift */; };
 		50D51B6522B3262000506BB0 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B5E22B3262000506BB0 /* Logger.swift */; };
-		50D51B6622B3262000506BB0 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6122B3262000506BB0 /* UIColorExtension.swift */; };
+		50D51B6622B3262000506BB0 /* CAGradientLayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6122B3262000506BB0 /* CAGradientLayerExtension.swift */; };
 		50D51B6722B3262000506BB0 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6222B3262000506BB0 /* UITableViewExtension.swift */; };
 		50D51B6822B3262000506BB0 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6422B3262000506BB0 /* NSObjectExtension.swift */; };
 		50D51B6C22B3291C00506BB0 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6A22B3291B00506BB0 /* AlertMessage.swift */; };
@@ -71,7 +71,7 @@
 		11BE6ED66FBF5D7DBDC79B4B /* Pods-GitHubClient.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubClient.production.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubClient/Pods-GitHubClient.production.xcconfig"; sourceTree = "<group>"; };
 		503103302228279E0045B69F /* UserDetailFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailFooterView.swift; sourceTree = "<group>"; };
 		50310332222827AD0045B69F /* UserDetailFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailFooterView.xib; sourceTree = "<group>"; };
-		5032971E22B73B2200979438 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		5032971E22B73B2200979438 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		503C169E22295DDB0067B9E5 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
 		50621DED2226396500EF217F /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		50621DEE2226396500EF217F /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		50D1EAB22262F60500CCF6CB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		50D1EAB42262F6C700CCF6CB /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		50D51B5E22B3262000506BB0 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		50D51B6122B3262000506BB0 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		50D51B6122B3262000506BB0 /* CAGradientLayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAGradientLayerExtension.swift; sourceTree = "<group>"; };
 		50D51B6222B3262000506BB0 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		50D51B6422B3262000506BB0 /* NSObjectExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
 		50D51B6A22B3291B00506BB0 /* AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
@@ -255,7 +255,7 @@
 		5087A00F2222269B002267E1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5087A0132222522A002267E1 /* Entitties */,
+				5087A0132222522A002267E1 /* Entities */,
 				50D51B6922B3291B00506BB0 /* Networking */,
 			);
 			path = Models;
@@ -270,14 +270,14 @@
 			path = DataStores;
 			sourceTree = "<group>";
 		};
-		5087A0132222522A002267E1 /* Entitties */ = {
+		5087A0132222522A002267E1 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
 				5087A01422225305002267E1 /* UserEntity.swift */,
 				50ADFBB822256B9B0037924E /* RepositoryEntity.swift */,
 				50D1EAAF2262E73A00CCF6CB /* LicenseEntity.swift */,
 			);
-			path = Entitties;
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		5087A023222293DD002267E1 /* Redux */ = {
@@ -343,9 +343,8 @@
 		50D51B6022B3262000506BB0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				50D51B6122B3262000506BB0 /* UIColorExtension.swift */,
 				50D51B6222B3262000506BB0 /* UITableViewExtension.swift */,
-				5032971E22B73B2200979438 /* UIViewController.swift */,
+				5032971E22B73B2200979438 /* UIViewControllerExtension.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -353,6 +352,7 @@
 		50D51B6322B3262000506BB0 /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				50D51B6122B3262000506BB0 /* CAGradientLayerExtension.swift */,
 				50D51B6422B3262000506BB0 /* NSObjectExtension.swift */,
 			);
 			path = Others;
@@ -582,11 +582,11 @@
 				50621DFC2226627000EF217F /* UserDetailItemCell.swift in Sources */,
 				50D51B7D22B330E700506BB0 /* Constants.swift in Sources */,
 				50D51B6522B3262000506BB0 /* Logger.swift in Sources */,
-				50D51B6622B3262000506BB0 /* UIColorExtension.swift in Sources */,
+				50D51B6622B3262000506BB0 /* CAGradientLayerExtension.swift in Sources */,
 				503103312228279E0045B69F /* UserDetailFooterView.swift in Sources */,
 				50D51B6C22B3291C00506BB0 /* AlertMessage.swift in Sources */,
 				50D51B7822B32F7E00506BB0 /* ApiManager.swift in Sources */,
-				5032971F22B73B2200979438 /* UIViewController.swift in Sources */,
+				5032971F22B73B2200979438 /* UIViewControllerExtension.swift in Sources */,
 				50621E082227814200EF217F /* UserDetailSectionView.swift in Sources */,
 				5099F939227E87F700E2A3A7 /* Storyboard-Segues.swift in Sources */,
 				50D51B7A22B32F9E00506BB0 /* ApiManagerRetrier.swift in Sources */,

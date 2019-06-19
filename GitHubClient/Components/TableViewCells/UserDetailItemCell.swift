@@ -21,9 +21,9 @@ class UserDetailItemCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        let gradientLayer = CAGradientLayer.gradientLayer(frame: self.backgroundImage.frame,
-                                                           topColor: UIColor.clear,
-                                                           bottomColor: UIColor.darkGray)
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.set(frame: self.backgroundImage.frame,
+                          topColor: UIColor.clear, bottomColor: UIColor.darkGray)
         self.backgroundImage.layer.addSublayer(gradientLayer)
         self.avatarImage.layer.cornerRadius = self.avatarImage.layer.frame.width * 0.5
         self.avatarImage.clipsToBounds = true
