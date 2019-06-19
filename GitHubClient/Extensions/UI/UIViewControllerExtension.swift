@@ -29,8 +29,7 @@ extension UIViewController {
         self.present(alertController, animated: true, completion: nil)
         
     }
-    
-    
+
     func showLoader(isLoading: Bool) {
         if isLoading {
             if !KRProgressHUD.isVisible {

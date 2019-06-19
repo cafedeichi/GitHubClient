@@ -6,7 +6,6 @@
 //  Copyright © 2019 Cafe De Ichi. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 extension UITableView {

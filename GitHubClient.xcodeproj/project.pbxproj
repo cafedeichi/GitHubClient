@@ -345,6 +345,7 @@
 			children = (
 				50D51B6222B3262000506BB0 /* UITableViewExtension.swift */,
 				5032971E22B73B2200979438 /* UIViewControllerExtension.swift */,
+				50D51B6122B3262000506BB0 /* CAGradientLayerExtension.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -352,7 +353,6 @@
 		50D51B6322B3262000506BB0 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				50D51B6122B3262000506BB0 /* CAGradientLayerExtension.swift */,
 				50D51B6422B3262000506BB0 /* NSObjectExtension.swift */,
 			);
 			path = Others;
