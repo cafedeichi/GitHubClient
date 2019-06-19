@@ -1,5 +1,5 @@
 //
-//  UserDataStore.swift
+//  UserRequest.swift
 //  GitHubClient
 //
 //  Created by ichi on 2019/02/24.
@@ -9,7 +9,7 @@
 import Foundation
 import PromiseKit
 
-class UserDataStore {
+class UserRequest {
         
     public static func getList(since: Int = 0) -> Promise<[UserEntity]> {
         

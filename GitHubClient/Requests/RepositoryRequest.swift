@@ -1,5 +1,5 @@
 //
-//  RepositoryDataStore.swift
+//  RepositoryRequest.swift
 //  GitHubClient
 //
 //  Created by ichi on 2019/02/26.
@@ -9,7 +9,7 @@
 import Foundation
 import PromiseKit
 
-class RepositoryDataStore {
+class RepositoryRequest {
     
     public static func getList(login: String, page: Int = 0) -> Promise<[RepositoryEntity]> {
         

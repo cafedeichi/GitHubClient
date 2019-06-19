@@ -17,7 +17,7 @@ struct UserListActionCreator {
         
         store.dispatch(UserListState.UserListAction.loadUserList)
                 
-        UserDataStore.getList(since: lastUserId).done { userList in
+        UserRequest.getList(since: lastUserId).done { userList in
             store.dispatch(UserListState.UserListAction.loadedUserList(userList: userList, refresh: refresh))
             }.catch { error in
                 store.dispatch(UserListState.UserListAction.failure(message: error as! AlertMessage))
