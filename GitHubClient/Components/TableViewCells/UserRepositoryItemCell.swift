@@ -29,7 +29,7 @@ class UserRepositoryItemCell: UITableViewCell {
         self.nameLabel.text = nil
         self.starGazersAndLanguageLabel.text = nil
         self.descriptionLabel.text = nil
-        self.descriptionLabel.textColor = .black
+        self.descriptionLabel.textColor = Assets.tungsten.color
     }
     
     func configureCell(repository: RepositoryEntity) {
