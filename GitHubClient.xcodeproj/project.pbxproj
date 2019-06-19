@@ -176,7 +176,6 @@
 			children = (
 				50D51B5F22B3262000506BB0 /* Extensions */,
 				5087A00F2222269B002267E1 /* Models */,
-				5087A010222226CA002267E1 /* Requests */,
 				50D51B5D22B3262000506BB0 /* Utilities */,
 				5087A023222293DD002267E1 /* Redux */,
 				50D1EAB12262F5EF00CCF6CB /* Coordinators */,
@@ -257,6 +256,7 @@
 			children = (
 				5087A0132222522A002267E1 /* Entities */,
 				50D51B6922B3291B00506BB0 /* Networking */,
+				5087A010222226CA002267E1 /* Requests */,
 			);
 			path = Models;
 			sourceTree = "<group>";
