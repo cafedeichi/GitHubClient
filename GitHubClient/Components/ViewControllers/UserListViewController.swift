@@ -81,7 +81,7 @@ class UserListViewController: UIViewController {
         UserListActionCreator.fetchUserList(since: self.since)
         
     }
-    
+
 }
 
 extension UserListViewController: StoreSubscriber {
@@ -109,11 +109,6 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCustomCell(with: UserListItemCell.self)
         cell.configureCell(user: self.userList[indexPath.row])
-        
-        if indexPath.row == self.userList.count - 1 {
-            UserListActionCreator.fetchUserList(since: self.since)
-        }
-
         return cell
     }
     
@@ -122,4 +117,18 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
         self.coordinator?.userDetail(user: self.userList[indexPath.row])
     }
     
+}
+
+extension UserListViewController {
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        
+        let currentOffset = scrollView.contentOffset.y
+        let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height
+        
+        if maximumOffset - currentOffset <= 10.0 {
+            UserListActionCreator.fetchUserList(since: self.since)
+        }
+        
+    }
 }
