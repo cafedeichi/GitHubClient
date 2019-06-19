@@ -32,10 +32,10 @@ struct UserListReducer {
                     state.userList += userList
                 }
             }
-            state.errorMessage = nil
-        case let .failure(error):
+            state.message = nil
+        case let .failure(message):
             state.isLoading = false
-            state.errorMessage = error.localizedDescription
+            state.message = message
         }
         
         return state

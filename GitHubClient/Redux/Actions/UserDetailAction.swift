@@ -15,7 +15,7 @@ extension UserDetailState {
         case loadedUser(user: UserEntity)
         case loadedRepositoryList(repostoryList: [RepositoryEntity])
         case loadedRepositoryListMore(repostoryList: [RepositoryEntity])
-        case failure(error: Error)
+        case failure(message: AlertMessage)
     }
     
 }

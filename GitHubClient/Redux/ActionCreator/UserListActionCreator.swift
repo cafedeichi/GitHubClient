@@ -16,11 +16,11 @@ struct UserListActionCreator {
         let lastUserId = (refresh) ? 0 : since
         
         store.dispatch(UserListState.UserListAction.loadUserList)
-        
+                
         UserDataStore.getList(since: lastUserId).done { userList in
             store.dispatch(UserListState.UserListAction.loadedUserList(userList: userList, refresh: refresh))
             }.catch { error in
-                store.dispatch(UserListState.UserListAction.failure(error: error))
+                store.dispatch(UserListState.UserListAction.failure(message: error as! AlertMessage))
         }
         
     }

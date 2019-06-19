@@ -13,7 +13,7 @@ extension UserListState {
     enum UserListAction: Action {
         case loadUserList
         case loadedUserList(userList: [UserEntity], refresh: Bool)
-        case failure(error: Error)
+        case failure(message: AlertMessage)
     }
     
 }

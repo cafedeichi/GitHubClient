@@ -12,5 +12,5 @@ struct UserListState: StateType {
     var isLoading: Bool = false
     var since: Int = 0
     var userList: [UserEntity] = []
-    var errorMessage: String?
+    var message: AlertMessage?
 }

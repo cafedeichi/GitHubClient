@@ -34,6 +34,12 @@ class UserListViewController: UIViewController {
             self.showLoader(isLoading: (isLoading && refresher.state != .loading))
         }
     }
+
+    fileprivate var message: AlertMessage? = nil {
+        didSet {
+            self.showAlertWith(message: message)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,6 +90,7 @@ extension UserListViewController: StoreSubscriber {
         self.isLoading = state.userList.isLoading
         self.since = state.userList.since
         self.userList = state.userList.userList
+        self.message = state.userList.message
     }
     
 }

@@ -25,20 +25,20 @@ struct UserDetailReducer {
         case let .loadedUser(user):
             state.isLoading = false
             state.user = user
-            state.errorMessage = nil
+            state.message = nil
         case let .loadedRepositoryList(repositoryList):
             state.isLoading = false
             state.page = 1
             state.repositoryList = repositoryList
-            state.errorMessage = nil
+            state.message = nil
         case let .loadedRepositoryListMore(repositoryList):
             state.isLoading = false
             state.page += 1
             state.repositoryList += repositoryList
-            state.errorMessage = nil
-        case let .failure(error):
+            state.message = nil
+        case let .failure(message):
             state.isLoading = false
-            state.errorMessage = error.localizedDescription
+            state.message = message
         }
         
         return state
