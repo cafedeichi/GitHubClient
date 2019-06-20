@@ -32,11 +32,11 @@ extension EndPointItemsType: EndPointType {
     var baseURL: String {
         switch APIManager.networkEnviroment {
         case .dev:
-            return Constants.baseURL
+            return "https://api.github.com/"
         case .production:
-            return Constants.baseURL
+            return "https://api.github.com/"
         case .stage:
-            return Constants.baseURL
+            return "https://api.github.com/"
         }
     }
     

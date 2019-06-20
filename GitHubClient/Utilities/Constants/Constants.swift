@@ -11,7 +11,6 @@ import Foundation
 class Constants {
     
     // MARK: - API
-    static let baseURL = "https://api.github.com/"
     // TODO: Write your public access token.
     static let accessToken = ""
     
