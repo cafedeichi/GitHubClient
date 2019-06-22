@@ -1,5 +1,5 @@
 //
-//  NSObjectExtension.swift
+//  NSObject.swift
 //  GitHubClient
 //
 //  Created by ichi on 2019/02/24.
