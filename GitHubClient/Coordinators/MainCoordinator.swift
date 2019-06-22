@@ -13,7 +13,7 @@ import SafariServices
 class MainCoordinator: Coordinator {
     
     var childCoordinators = [Coordinator]()
-    var navigationController = UINavigationController()
+    var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -21,7 +21,7 @@ class MainCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = StoryboardScene.Main.userListViewController.instantiate()
+        let viewController = UserListViewController(nibName: UserListViewController.className, bundle: nil)
         viewController.coordinator = self
         self.navigationController.setViewControllers([viewController], animated: false)
     }

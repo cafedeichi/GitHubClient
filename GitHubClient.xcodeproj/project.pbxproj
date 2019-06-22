@@ -48,6 +48,7 @@
 		50ADFBBD222572B80037924E /* RepositoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBBC222572B80037924E /* RepositoryRequest.swift */; };
 		50ADFBBF222574A30037924E /* UserDetailActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBBE222574A30037924E /* UserDetailActionCreator.swift */; };
 		50ADFBC1222576F60037924E /* UserDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBC0222576F60037924E /* UserDetailReducer.swift */; };
+		50CCD4F822BDF7F400236BE9 /* UserListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50CCD4F722BDF7F400236BE9 /* UserListViewController.xib */; };
 		50D1EAB02262E73A00CCF6CB /* LicenseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAAF2262E73A00CCF6CB /* LicenseEntity.swift */; };
 		50D1EAB32262F60500CCF6CB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAB22262F60500CCF6CB /* Coordinator.swift */; };
 		50D1EAB52262F6C700CCF6CB /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAB42262F6C700CCF6CB /* MainCoordinator.swift */; };
@@ -108,6 +109,7 @@
 		50ADFBBC222572B80037924E /* RepositoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRequest.swift; sourceTree = "<group>"; };
 		50ADFBBE222574A30037924E /* UserDetailActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailActionCreator.swift; sourceTree = "<group>"; };
 		50ADFBC0222576F60037924E /* UserDetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailReducer.swift; sourceTree = "<group>"; };
+		50CCD4F722BDF7F400236BE9 /* UserListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListViewController.xib; sourceTree = "<group>"; };
 		50D1EAAF2262E73A00CCF6CB /* LicenseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseEntity.swift; sourceTree = "<group>"; };
 		50D1EAB22262F60500CCF6CB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		50D1EAB42262F6C700CCF6CB /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				5087A00922219171002267E1 /* UserListViewController.swift */,
+				50CCD4F722BDF7F400236BE9 /* UserListViewController.xib */,
 				50621DED2226396500EF217F /* UserDetailViewController.swift */,
 				50621DEE2226396500EF217F /* UserDetailViewController.xib */,
 			);
@@ -484,6 +487,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50CCD4F822BDF7F400236BE9 /* UserListViewController.xib in Resources */,
 				50621E062227811C00EF217F /* UserDetailSectionView.xib in Resources */,
 				5064C04C222143760042A439 /* (null) in Resources */,
 				5064C04A222143760042A439 /* (null) in Resources */,
