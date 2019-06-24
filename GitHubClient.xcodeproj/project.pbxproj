@@ -11,6 +11,8 @@
 		50310333222827AD0045B69F /* UserDetailFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50310332222827AD0045B69F /* UserDetailFooterView.xib */; };
 		5032971F22B73B2200979438 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5032971E22B73B2200979438 /* UIViewController.swift */; };
 		503C169F22295DDB0067B9E5 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503C169E22295DDB0067B9E5 /* Middleware.swift */; };
+		504DE26322C0A29C00494DD9 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DE26222C0A29C00494DD9 /* UIButton.swift */; };
+		504DE26622C0A5AF00494DD9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DE26522C0A5AF00494DD9 /* BaseViewController.swift */; };
 		50621DEF2226396500EF217F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50621DED2226396500EF217F /* UserDetailViewController.swift */; };
 		50621DF02226396500EF217F /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50621DEE2226396500EF217F /* UserDetailViewController.xib */; };
 		50621DF3222639AD00EF217F /* UserRepositoryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50621DF1222639AD00EF217F /* UserRepositoryItemCell.swift */; };
@@ -65,6 +67,8 @@
 		50D51B7A22B32F9E00506BB0 /* ApiManagerRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B7922B32F9E00506BB0 /* ApiManagerRetrier.swift */; };
 		50D51B7D22B330E700506BB0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B7C22B330E700506BB0 /* Constants.swift */; };
 		50D51B8022B33B6300506BB0 /* APIManagerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B7F22B33B6300506BB0 /* APIManagerAdapter.swift */; };
+		50D6AE9022BF753200B139B0 /* CoordinatorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6AE8F22BF753200B139B0 /* CoordinatorNavigationController.swift */; };
+		50D6AE9222BF75CA00B139B0 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6AE9122BF75CA00B139B0 /* UINavigationBar.swift */; };
 		7800CF08E296A8B23115AA41 /* Pods_GitHubClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B087E36A4B21E70C1B5E54 /* Pods_GitHubClient.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +78,8 @@
 		50310332222827AD0045B69F /* UserDetailFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailFooterView.xib; sourceTree = "<group>"; };
 		5032971E22B73B2200979438 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		503C169E22295DDB0067B9E5 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		504DE26222C0A29C00494DD9 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		504DE26522C0A5AF00494DD9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		50621DED2226396500EF217F /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		50621DEE2226396500EF217F /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
 		50621DF1222639AD00EF217F /* UserRepositoryItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryItemCell.swift; sourceTree = "<group>"; };
@@ -126,6 +132,8 @@
 		50D51B7922B32F9E00506BB0 /* ApiManagerRetrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManagerRetrier.swift; sourceTree = "<group>"; };
 		50D51B7C22B330E700506BB0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		50D51B7F22B33B6300506BB0 /* APIManagerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerAdapter.swift; sourceTree = "<group>"; };
+		50D6AE8F22BF753200B139B0 /* CoordinatorNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorNavigationController.swift; sourceTree = "<group>"; };
+		50D6AE9122BF75CA00B139B0 /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
 		54B087E36A4B21E70C1B5E54 /* Pods_GitHubClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9040862979A2E9C365A16413 /* Pods-GitHubClient.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubClient.staging.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubClient/Pods-GitHubClient.staging.xcconfig"; sourceTree = "<group>"; };
 		D6443030C711A42FEC00FEA7 /* Pods-GitHubClient.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubClient.develop.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubClient/Pods-GitHubClient.develop.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +151,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		504DE26422C0A4EF00494DD9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				50D6AE8F22BF753200B139B0 /* CoordinatorNavigationController.swift */,
+				504DE26522C0A5AF00494DD9 /* BaseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		50621E042227810100EF217F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +337,7 @@
 			children = (
 				50D1EAB22262F60500CCF6CB /* Coordinator.swift */,
 				50D1EAB42262F6C700CCF6CB /* MainCoordinator.swift */,
+				504DE26422C0A4EF00494DD9 /* ViewControllers */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -346,6 +364,8 @@
 		50D51B6022B3262000506BB0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				504DE26222C0A29C00494DD9 /* UIButton.swift */,
+				50D6AE9122BF75CA00B139B0 /* UINavigationBar.swift */,
 				50D51B6222B3262000506BB0 /* UITableView.swift */,
 				5032971E22B73B2200979438 /* UIViewController.swift */,
 				50D51B6122B3262000506BB0 /* CAGradientLayer.swift */,
@@ -592,16 +612,20 @@
 				50D51B7822B32F7E00506BB0 /* ApiManager.swift in Sources */,
 				5032971F22B73B2200979438 /* UIViewController.swift in Sources */,
 				50621E082227814200EF217F /* UserDetailSectionView.swift in Sources */,
+				504DE26322C0A29C00494DD9 /* UIButton.swift in Sources */,
 				5099F939227E87F700E2A3A7 /* Storyboard-Segues.swift in Sources */,
+				50D6AE9222BF75CA00B139B0 /* UINavigationBar.swift in Sources */,
 				50D51B7A22B32F9E00506BB0 /* ApiManagerRetrier.swift in Sources */,
 				50621DF3222639AD00EF217F /* UserRepositoryItemCell.swift in Sources */,
 				5087A00B22219171002267E1 /* UserListViewController.swift in Sources */,
 				50D51B6D22B3291C00506BB0 /* NetworkError.swift in Sources */,
 				50D51B7222B32ABE00506BB0 /* EndPointItems.swift in Sources */,
+				50D6AE9022BF753200B139B0 /* CoordinatorNavigationController.swift in Sources */,
 				5087A01522225305002267E1 /* UserEntity.swift in Sources */,
 				503C169F22295DDB0067B9E5 /* Middleware.swift in Sources */,
 				50D51B8022B33B6300506BB0 /* APIManagerAdapter.swift in Sources */,
 				50D1EAB02262E73A00CCF6CB /* LicenseEntity.swift in Sources */,
+				504DE26622C0A5AF00494DD9 /* BaseViewController.swift in Sources */,
 				5087A012222226EA002267E1 /* UserRequest.swift in Sources */,
 				5087A02E2222DA8B002267E1 /* Store.swift in Sources */,
 				50D51B7022B329E000506BB0 /* EndPointType.swift in Sources */,
