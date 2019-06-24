@@ -15,7 +15,8 @@ extension UIButton {
     static func customBackButton(backButtonImage: UIImage? = nil,
                                  backButtonTitle: String? = nil,
                                  backButtonfont: UIFont? = nil,
-                                 backButtonTitleColor: UIColor? = nil) -> UIButton {
+                                 backButtonTitleColor: UIColor? = nil,
+                                 backButtonTintColor: UIColor? = nil) -> UIButton {
         
         let button = UIButton(type: .system)
         
@@ -31,7 +32,10 @@ extension UIButton {
         if let backButtonTitleColor = backButtonTitleColor {
             button.setTitleColor(backButtonTitleColor, for: .normal)
         }
-        
+        if let backButtonTintColor = backButtonTintColor {
+            button.tintColor = backButtonTintColor
+        }
+
         button.centerTextAndImage(spacing: 8)
         
         return button

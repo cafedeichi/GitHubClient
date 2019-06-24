@@ -14,7 +14,7 @@ protocol CoordinatorNavigationControllerDelegate: class {
 
 class CoordinatorNavigationController: UINavigationController {
     
-    // MARK: Delegates
+    // MARK: - Delegates
     
     weak var swipeBackDelegate: CoordinatorNavigationControllerDelegate?
     
@@ -24,6 +24,7 @@ class CoordinatorNavigationController: UINavigationController {
     private var backButtonTitle: String?
     private var backButtonfont: UIFont?
     private var backButtonTitleColor: UIColor?
+    private var backButtonTintColor: UIColor?
     private var shouldUseViewControllerTitles = false
     
     // MARK: - Public methods
@@ -32,12 +33,15 @@ class CoordinatorNavigationController: UINavigationController {
                              backButtonTitle: String? = nil,
                              backButtonfont: UIFont? = nil,
                              backButtonTitleColor: UIColor? = nil,
+                             backButtonTintColor: UIColor? = nil,
                              shouldUseViewControllerTitles: Bool = false) {
         self.backButtonImage = backButtonImage
         self.backButtonTitle = backButtonTitle
         self.backButtonfont = backButtonfont
         self.backButtonTitleColor = backButtonTitleColor
+        self.backButtonTintColor = backButtonTintColor
         self.shouldUseViewControllerTitles = shouldUseViewControllerTitles
+        
     }
     
     func customizeTitle(titleColor: UIColor,
@@ -67,7 +71,7 @@ class CoordinatorNavigationController: UINavigationController {
         if self.backButtonImage != nil || self.backButtonTitle != nil {
             viewController.navigationItem.hidesBackButton = true
             let backButtonTitle = self.shouldUseViewControllerTitles ? self.viewControllers[self.viewControllers.count - 2].title : self.backButtonTitle
-            let button = UIButton.customBackButton(backButtonImage: self.backButtonImage, backButtonTitle: backButtonTitle, backButtonfont: self.backButtonfont, backButtonTitleColor: self.backButtonTitleColor)
+            let button = UIButton.customBackButton(backButtonImage: self.backButtonImage, backButtonTitle: backButtonTitle, backButtonfont: self.backButtonfont, backButtonTitleColor: self.backButtonTitleColor, backButtonTintColor: self.backButtonTintColor)
             button.addTarget(self, action: #selector(actionBack(sender:)), for: .touchUpInside)
             viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: button)
         }

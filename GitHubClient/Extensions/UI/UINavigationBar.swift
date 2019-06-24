@@ -21,7 +21,7 @@ extension UINavigationBar {
         self.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: color, NSAttributedString.Key.font: smallTextFont]
         self.appearance().isTranslucent = isTranslucent
         
-        if let barTintColor = barTintColor {
+        if barTintColor != nil {
             self.appearance().barTintColor = barTintColor
         }
         

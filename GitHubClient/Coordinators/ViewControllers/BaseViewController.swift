@@ -14,7 +14,7 @@ class BaseViewController: UIViewController, CoordinatorNavigationControllerDeleg
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.setupNavigationController()
     }
     
     // MARK: - Private methods
@@ -27,8 +27,6 @@ class BaseViewController: UIViewController, CoordinatorNavigationControllerDeleg
     
     // MARK: - SwipeBackNavigationControllerDelegate
     
-    internal func didSelectCustomBackAction() {
-        
-    }
-    
+    internal func didSelectCustomBackAction() {}
+   
 }

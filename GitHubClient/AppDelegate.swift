@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         KRProgressHUD.appearance().maskType = KRProgressHUDMaskType.white
         
         // Application Coordinator
-        let navigationController = UINavigationController()
+        let navigationController = StoryboardScene.Main.initialScene.instantiate()
         self.coordinator = MainCoordinator(navigationController: navigationController)
         self.coordinator?.start()
         

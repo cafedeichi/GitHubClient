@@ -10,16 +10,19 @@ import UIKit
 import ReSwift
 import PullToRefresh
 
-class UserDetailViewController: UIViewController {
+protocol UserDetailViewControllerProtocol: class {
+    var onBack: (() -> Void)? { get set }
+}
+
+class UserDetailViewController: BaseViewController, UserDetailViewControllerProtocol {
+    
+    // MARK: - Vars & Lets
     
     weak var coordinator: MainCoordinator?
-
+    
     @IBOutlet weak var userDetailTableView: UITableView!
     
     fileprivate let refresher = PullToRefresh()
-    
-    fileprivate var backArrowButton: UIBarButtonItem!
-
     fileprivate var selectedUser: UserEntity!
 
     fileprivate var user: UserEntity! = nil {
@@ -42,7 +45,7 @@ class UserDetailViewController: UIViewController {
     }
     
     fileprivate var page: Int = 0
-
+    
     fileprivate var topRowHeight: CGFloat!
     fileprivate var rowHeight: CGFloat!
     fileprivate var headerBaseView: UIView!
@@ -50,6 +53,12 @@ class UserDetailViewController: UIViewController {
     fileprivate var sectionView: UserDetailSectionView!
     fileprivate var footerView: UserDetailFooterView!
     fileprivate var tapGesture: UITapGestureRecognizer!
+    
+    // MARK: - RegisterViewControllerProtocol
+    
+    var onBack: (() -> Void)?
+
+    // MARK: - Controller lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,13 +75,17 @@ class UserDetailViewController: UIViewController {
         store.unsubscribe(self)
     }
     
+    // MARK: - Deinit
+    
     deinit {
         self.footerView.removeGestureRecognizer(self.tapGesture)
     }
     
+    // MARK: - Private methods
+    
     fileprivate func prepare() {
         
-        self.prepareNavigationItems()
+        self.navigationItem.title = "User Profile"
         
         let topNib = UINib(nibName: UserDetailItemCell.className, bundle: nil)
         let nib = UINib(nibName: UserRepositoryItemCell.className, bundle: nil)
@@ -102,36 +115,20 @@ class UserDetailViewController: UIViewController {
         
     }
     
-    fileprivate func prepareNavigationItems() {
-        
-        self.navigationItem.title = "User Profile"
-        
-        self.backArrowButton = UIBarButtonItem(image: Assets.back.image,
-                                          style: UIBarButtonItem.Style.plain,
-                                          target: self,
-                                          action: #selector(UserDetailViewController.barButtonItemTapped(_:)))
-        self.backArrowButton.tag = 1
-        self.navigationItem.leftBarButtonItems = [backArrowButton]
-        
-    }
-    
-    @objc func barButtonItemTapped(_ sender: UIBarButtonItem) {
-
-        switch sender.tag {
-        case 1:
-            self.navigationController?.popViewController(animated: true)
-        default:
-            break
-        }
-        
-    }
+    // MARK: - Actions
     
     @objc fileprivate func viewTapped(_ sender: UIGestureRecognizer? = nil) {
         UserDetailActionCreator.fetchRepositoryList(login: self.selectedUser.login, page: self.page, loadMore: true)
     }
     
+    // MARK: - Public methods
+
     func setSelectedUser(user: UserEntity) {
         self.selectedUser = user
+    }
+    
+    override func didSelectCustomBackAction() {
+        self.onBack?()
     }
 
 }
@@ -146,6 +143,8 @@ extension UserDetailViewController: StoreSubscriber {
     }
     
 }
+
+// MARK: - Delegates & Data Sources
 
 extension UserDetailViewController: UITableViewDelegate, UITableViewDataSource {
     

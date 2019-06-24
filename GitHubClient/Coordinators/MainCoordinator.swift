@@ -12,13 +12,33 @@ import SafariServices
 
 class MainCoordinator: Coordinator {
     
-    var childCoordinators = [Coordinator]()
-    var navigationController: UINavigationController
+    // MARK: - Vars & Lets
     
-    init(navigationController: UINavigationController) {
+    var childCoordinators = [Coordinator]()
+    var navigationController: CoordinatorNavigationController
+
+    // MARK: - Init
+    
+    init(navigationController: CoordinatorNavigationController) {
         self.navigationController = navigationController
-        self.navigationController.navigationBar.tintColor = Assets.tungsten.color
+        self.customoizeNavigationController()
     }
+    
+    // MARK: - Private Methods
+    
+    private func customoizeNavigationController() {
+        self.navigationController.customizeTitle(titleColor: Assets.tungsten.color,
+                                                 largeTextFont: UIFont.systemFont(ofSize: 32, weight: .semibold),
+                                                 smallTextFont: UIFont.systemFont(ofSize: 16, weight: .semibold),
+                                                 isTranslucent: true,
+                                                 barTintColor: Assets.white.color,
+                                                 prefersLargeTitles: true)
+        self.navigationController.customizeBackButton(backButtonImage: Assets.back.image,
+                                                      backButtonTintColor: Assets.tungsten.color,
+                                                      shouldUseViewControllerTitles: true)
+    }
+    
+    // MARK: - Public Methods
     
     func start() {
         let viewController = UserListViewController(nibName: UserListViewController.className, bundle: nil)
@@ -30,6 +50,9 @@ class MainCoordinator: Coordinator {
         let viewController = UserDetailViewController(nibName: UserDetailViewController.className, bundle: nil)
         viewController.setSelectedUser(user: user)
         viewController.coordinator = self
+        viewController.onBack = { [unowned self] in
+            self.navigationController.popViewController(animated: true)
+        }
         self.navigationController.pushViewController(viewController, animated: true)
     }
 
