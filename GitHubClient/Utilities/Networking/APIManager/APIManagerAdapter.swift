@@ -8,25 +8,10 @@
 
 import Alamofire
 
-final class APIManagerAdapter: RequestAdapter {
-    private let accessToken: String
-    
-    init(accessToken: String) {
-        self.accessToken = accessToken
-    }
-    
+final class APIManagerAdapter: RequestAdapter {    
     func adapt(_ urlRequest: URLRequest) throws -> URLRequest {
-        
-        var urlRequest = urlRequest
-        
-        if urlRequest.url?.absoluteString != nil {
-            // TODO: Set the Authorization header value using the access token.            
-            urlRequest.setValue("token " + accessToken, forHTTPHeaderField: "Authorization")
-        }
-        
-        // Print each outgoing request.
+        // Print all outgoing requests.
         Logger.debugPrint("Running request: \(urlRequest.httpMethod ?? "") - \(urlRequest.url?.absoluteString ?? "")")
-        
         return urlRequest
     }
 }

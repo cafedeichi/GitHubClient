@@ -66,7 +66,8 @@ extension EndPointItemsType: EndPointType {
         switch self {
         default:
             return ["Content-Type": "application/json",
-                    "X-Requested-With": "XMLHttpRequest"]
+                    "X-Requested-With": "XMLHttpRequest",
+                    "Authorization": "token " + Constants.accessToken]
         }
     }
     
