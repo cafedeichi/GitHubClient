@@ -85,9 +85,9 @@ class APIManager {
     private func parseApiError(data: Data?) -> AlertMessage {
         let decoder = JSONDecoder()
         if let jsonData = data, let error = try? decoder.decode(NetworkError.self, from: jsonData) {
-            return AlertMessage(title: Constants.errorAlertTitle, body: error.key ?? error.message)
+            return AlertMessage(title: L10n.errorAlertTitle, body: error.key ?? error.message)
         }
-        return AlertMessage(title: Constants.errorAlertTitle, body: Constants.genericErrorMessage)
+        return AlertMessage(title: L10n.errorAlertTitle, body: L10n.genericErrorMessage)
     }
 
 }

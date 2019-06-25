@@ -1,0 +1,12 @@
+/* 
+  Messages.strings
+  GitHubClient
+
+  Created by ichi on 2019/06/25.
+  Copyright © 2019 Cafe De Ichi. All rights reserved.
+*/
+
+// MARK: - Alerts
+"defaultAlertTitle"="warning";
+"errorAlertTitle"="error";
+"genericErrorMessage"="Something went wrong, please try again.";

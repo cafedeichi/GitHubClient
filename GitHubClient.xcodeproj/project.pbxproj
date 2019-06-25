@@ -13,6 +13,8 @@
 		503C169F22295DDB0067B9E5 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503C169E22295DDB0067B9E5 /* Middleware.swift */; };
 		504DE26322C0A29C00494DD9 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DE26222C0A29C00494DD9 /* UIButton.swift */; };
 		504DE26622C0A5AF00494DD9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DE26522C0A5AF00494DD9 /* BaseViewController.swift */; };
+		504DE28222C1BDE600494DD9 /* Messages.strings in Resources */ = {isa = PBXBuildFile; fileRef = 504DE28122C1BDE600494DD9 /* Messages.strings */; };
+		504DE28422C1BEA500494DD9 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DE28322C1BEA400494DD9 /* Strings.swift */; };
 		50621DEF2226396500EF217F /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50621DED2226396500EF217F /* UserDetailViewController.swift */; };
 		50621DF02226396500EF217F /* UserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50621DEE2226396500EF217F /* UserDetailViewController.xib */; };
 		50621DF3222639AD00EF217F /* UserRepositoryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50621DF1222639AD00EF217F /* UserRepositoryItemCell.swift */; };
@@ -80,6 +82,8 @@
 		503C169E22295DDB0067B9E5 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
 		504DE26222C0A29C00494DD9 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		504DE26522C0A5AF00494DD9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		504DE28122C1BDE600494DD9 /* Messages.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Messages.strings; path = Locale/Messages.strings; sourceTree = "<group>"; };
+		504DE28322C1BEA400494DD9 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		50621DED2226396500EF217F /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		50621DEE2226396500EF217F /* UserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailViewController.xib; sourceTree = "<group>"; };
 		50621DF1222639AD00EF217F /* UserRepositoryItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryItemCell.swift; sourceTree = "<group>"; };
@@ -160,6 +164,14 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		504DE27922C1BD5800494DD9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				504DE28122C1BDE600494DD9 /* Messages.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		50621E042227810100EF217F /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +211,7 @@
 				5087A023222293DD002267E1 /* Redux */,
 				50D1EAB12262F5EF00CCF6CB /* Coordinators */,
 				50879FD022215055002267E1 /* Components */,
+				504DE27922C1BD5800494DD9 /* Resources */,
 				5064C043222143760042A439 /* AppDelegate.swift */,
 				5064C054222143780042A439 /* LaunchScreen.storyboard */,
 				5064C057222143780042A439 /* Info.plist */,
@@ -325,6 +338,7 @@
 		5099F932227E845500E2A3A7 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				504DE28322C1BEA400494DD9 /* Strings.swift */,
 				5099F933227E848D00E2A3A7 /* Assets-Constants.swift */,
 				5099F938227E87F700E2A3A7 /* Storyboard-Scenes.swift */,
 				5099F937227E87F700E2A3A7 /* Storyboard-Segues.swift */,
@@ -521,6 +535,7 @@
 				50621DF4222639AD00EF217F /* UserRepositoryItemCell.xib in Resources */,
 				50310333222827AD0045B69F /* UserDetailFooterView.xib in Resources */,
 				5064C046222143760042A439 /* (null) in Resources */,
+				504DE28222C1BDE600494DD9 /* Messages.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +638,7 @@
 				50D6AE9022BF753200B139B0 /* CoordinatorNavigationController.swift in Sources */,
 				5087A01522225305002267E1 /* UserEntity.swift in Sources */,
 				503C169F22295DDB0067B9E5 /* Middleware.swift in Sources */,
+				504DE28422C1BEA500494DD9 /* Strings.swift in Sources */,
 				50D51B8022B33B6300506BB0 /* APIManagerAdapter.swift in Sources */,
 				50D1EAB02262E73A00CCF6CB /* LicenseEntity.swift in Sources */,
 				504DE26622C0A5AF00494DD9 /* BaseViewController.swift in Sources */,
