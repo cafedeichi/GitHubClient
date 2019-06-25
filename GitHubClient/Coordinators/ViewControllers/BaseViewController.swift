@@ -25,7 +25,7 @@ class BaseViewController: UIViewController, CoordinatorNavigationControllerDeleg
         }
     }
     
-    // MARK: - SwipeBackNavigationControllerDelegate
+    // MARK: - CoordinatorNavigationControllerDelegate
     
     internal func didSelectCustomBackAction() {}
    
