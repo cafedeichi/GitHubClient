@@ -24,6 +24,7 @@ class APIManager {
     // MARK: - Initialization
     
     private init(sessionManager: SessionManager, retrier: APIManagerRetrier) {
+        sessionManager.adapter = APIManagerAdapter()
         self.sessionManager = sessionManager
         self.retrier = retrier
         self.sessionManager.retrier = self.retrier
