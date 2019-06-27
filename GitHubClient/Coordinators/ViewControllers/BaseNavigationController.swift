@@ -1,5 +1,5 @@
 //
-//  CoordinatorNavigationController.swift
+//  BaseNavigationController.swift
 //  GitHubClient
 //
 //  Created by ichi on 2019/06/23.
@@ -8,15 +8,15 @@
 
 import UIKit
 
-protocol CoordinatorNavigationControllerDelegate: class {
+protocol BaseNavigationControllerDelegate: class {
     func didSelectCustomBackAction()
 }
 
-class CoordinatorNavigationController: UINavigationController {
+class BaseNavigationController: UINavigationController {
     
     // MARK: - Delegates
     
-    weak var swipeBackDelegate: CoordinatorNavigationControllerDelegate?
+    weak var backActionDelegate: BaseNavigationControllerDelegate?
     
     // MARK: Back button customization
     
@@ -80,7 +80,7 @@ class CoordinatorNavigationController: UINavigationController {
     // MARK: - Actions
     
     @objc private func actionBack(sender: UIBarButtonItem) {
-        self.swipeBackDelegate?.didSelectCustomBackAction()
+        self.backActionDelegate?.didSelectCustomBackAction()
     }
 
 }

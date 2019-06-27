@@ -69,7 +69,7 @@
 		50D51B7A22B32F9E00506BB0 /* ApiManagerRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B7922B32F9E00506BB0 /* ApiManagerRetrier.swift */; };
 		50D51B7D22B330E700506BB0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B7C22B330E700506BB0 /* Constants.swift */; };
 		50D51B8022B33B6300506BB0 /* APIManagerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B7F22B33B6300506BB0 /* APIManagerAdapter.swift */; };
-		50D6AE9022BF753200B139B0 /* CoordinatorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6AE8F22BF753200B139B0 /* CoordinatorNavigationController.swift */; };
+		50D6AE9022BF753200B139B0 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6AE8F22BF753200B139B0 /* BaseNavigationController.swift */; };
 		50D6AE9222BF75CA00B139B0 /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D6AE9122BF75CA00B139B0 /* UINavigationBar.swift */; };
 		7800CF08E296A8B23115AA41 /* Pods_GitHubClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B087E36A4B21E70C1B5E54 /* Pods_GitHubClient.framework */; };
 /* End PBXBuildFile section */
@@ -136,7 +136,7 @@
 		50D51B7922B32F9E00506BB0 /* ApiManagerRetrier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManagerRetrier.swift; sourceTree = "<group>"; };
 		50D51B7C22B330E700506BB0 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		50D51B7F22B33B6300506BB0 /* APIManagerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerAdapter.swift; sourceTree = "<group>"; };
-		50D6AE8F22BF753200B139B0 /* CoordinatorNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorNavigationController.swift; sourceTree = "<group>"; };
+		50D6AE8F22BF753200B139B0 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		50D6AE9122BF75CA00B139B0 /* UINavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBar.swift; sourceTree = "<group>"; };
 		54B087E36A4B21E70C1B5E54 /* Pods_GitHubClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9040862979A2E9C365A16413 /* Pods-GitHubClient.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubClient.staging.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubClient/Pods-GitHubClient.staging.xcconfig"; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		504DE26422C0A4EF00494DD9 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				50D6AE8F22BF753200B139B0 /* CoordinatorNavigationController.swift */,
+				50D6AE8F22BF753200B139B0 /* BaseNavigationController.swift */,
 				504DE26522C0A5AF00494DD9 /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
@@ -635,7 +635,7 @@
 				5087A00B22219171002267E1 /* UserListViewController.swift in Sources */,
 				50D51B6D22B3291C00506BB0 /* NetworkError.swift in Sources */,
 				50D51B7222B32ABE00506BB0 /* EndPointItems.swift in Sources */,
-				50D6AE9022BF753200B139B0 /* CoordinatorNavigationController.swift in Sources */,
+				50D6AE9022BF753200B139B0 /* BaseNavigationController.swift in Sources */,
 				5087A01522225305002267E1 /* UserEntity.swift in Sources */,
 				503C169F22295DDB0067B9E5 /* Middleware.swift in Sources */,
 				504DE28422C1BEA500494DD9 /* Strings.swift in Sources */,

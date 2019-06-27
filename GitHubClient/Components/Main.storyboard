@@ -7,12 +7,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Coordinator Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="PW1-uU-eQH">
             <objects>
-                <navigationController id="rP4-hG-FBU" customClass="CoordinatorNavigationController" customModule="GitHubClient" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="rP4-hG-FBU" customClass="BaseNavigationController" customModule="GitHubClient" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YHE-9g-evP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                 </navigationController>

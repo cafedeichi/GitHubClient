@@ -15,11 +15,11 @@ class MainCoordinator: Coordinator {
     // MARK: - Vars & Lets
     
     var childCoordinators = [Coordinator]()
-    var navigationController: CoordinatorNavigationController
+    var navigationController: BaseNavigationController
 
     // MARK: - Init
     
-    init(navigationController: CoordinatorNavigationController) {
+    init(navigationController: BaseNavigationController) {
         self.navigationController = navigationController
         self.customoizeNavigationController()
     }

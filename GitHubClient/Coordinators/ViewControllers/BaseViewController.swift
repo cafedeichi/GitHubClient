@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseViewController: UIViewController, CoordinatorNavigationControllerDelegate {
+class BaseViewController: UIViewController, BaseNavigationControllerDelegate {
     
     // MARK: - Controller lifecycle
 
@@ -20,12 +20,12 @@ class BaseViewController: UIViewController, CoordinatorNavigationControllerDeleg
     // MARK: - Private methods
     
     private func setupNavigationController() {
-        if let navigationController = self.navigationController as? CoordinatorNavigationController {
-            navigationController.swipeBackDelegate = self
+        if let navigationController = self.navigationController as? BaseNavigationController {
+            navigationController.backActionDelegate = self
         }
     }
     
-    // MARK: - CoordinatorNavigationControllerDelegate
+    // MARK: - BaseNavigationControllerDelegate
     
     internal func didSelectCustomBackAction() {}
    
