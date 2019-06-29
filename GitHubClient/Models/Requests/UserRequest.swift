@@ -19,12 +19,12 @@ class UserRequest {
         
         return Promise<[UserEntity]> { seal in
             APIManager.shared().call(type: EndPointItemsType.getUsers,
-                                     parameters: parameters) { (response: Swift.Result<[UserEntity], AlertMessage>) in
+                                     parameters: parameters) { (response: Swift.Result<[UserEntity], AlertError>) in
                 switch response {
                 case .success(let userList):
                     seal.fulfill(userList)
-                case .failure(let alertMessage):
-                    seal.reject(alertMessage)
+                case .failure(let error):
+                    seal.reject(error)
                 }
             }
         }
@@ -34,12 +34,12 @@ class UserRequest {
     public static func get(login: String) -> Promise<UserEntity> {
         
         return Promise<UserEntity> { seal in
-            APIManager.shared().call(type: EndPointItemsType.getUser(login: login)) { (response: Swift.Result<UserEntity, AlertMessage>) in
+            APIManager.shared().call(type: EndPointItemsType.getUser(login: login)) { (response: Swift.Result<UserEntity, AlertError>) in
                 switch response {
                 case .success(let user):
                     seal.fulfill(user)
-                case .failure(let alertMessage):
-                    seal.reject(alertMessage)
+                case .failure(let error):
+                    seal.reject(error)
                 }
             }
         }

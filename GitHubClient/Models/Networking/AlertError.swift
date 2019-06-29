@@ -8,18 +8,18 @@
 
 import Foundation
 
-class AlertMessage: Error {
+class AlertError: Error {
     
     // MARK: - Vars & Lets
     
     var title = ""
-    var body = ""
+    var message = ""
     
     // MARK: - Intialization
     
-    init(title: String, body: String) {
+    init(title: String, message: String) {
         self.title = title
-        self.body = body
+        self.message = message
     }
     
 }

@@ -19,12 +19,12 @@ class RepositoryRequest {
         
         return Promise<[RepositoryEntity]> { seal in
             APIManager.shared().call(type: EndPointItemsType.getUserRepository(login: login),
-                                     parameters: parameters) { (response: Swift.Result<[RepositoryEntity], AlertMessage>) in
+                                     parameters: parameters) { (response: Swift.Result<[RepositoryEntity], AlertError>) in
                                         switch response {
                                         case .success(let repositoryList):
                                             seal.fulfill(repositoryList)
-                                        case .failure(let alertMessage):
-                                            seal.reject(alertMessage)
+                                        case .failure(let error):
+                                            seal.reject(error)
                                         }
             }
         }

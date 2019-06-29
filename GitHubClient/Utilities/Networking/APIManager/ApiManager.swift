@@ -38,7 +38,7 @@ class APIManager {
     
     // MARK: - Public methods
     
-    func call(type: EndPointType, parameters: Parameters? = nil, handler: @escaping (Swift.Result<(), AlertMessage>) -> Void) {
+    func call(type: EndPointType, parameters: Parameters? = nil, handler: @escaping (Swift.Result<(), AlertError>) -> Void) {
         self.sessionManager.request(type.url,
                                     method: type.httpMethod,
                                     parameters: parameters,
@@ -53,7 +53,7 @@ class APIManager {
         }
     }
     
-    func call<T>(type: EndPointType, parameters: Parameters? = nil, handler: @escaping (Swift.Result<T, AlertMessage>) -> Void) where T: Codable {
+    func call<T>(type: EndPointType, parameters: Parameters? = nil, handler: @escaping (Swift.Result<T, AlertError>) -> Void) where T: Codable {
         self.sessionManager.request(type.url,
                                     method: type.httpMethod,
                                     parameters: parameters,
@@ -61,13 +61,13 @@ class APIManager {
                                     headers: type.headers).validate().responseJSON { (data) in
                                         do {
                                             guard let jsonData = data.data else {
-                                                throw AlertMessage(title: "Error", body: "No data")
+                                                throw AlertError(title: "Error", message: "No data")
                                             }
                                             let result = try JSONDecoder().decode(T.self, from: jsonData)
                                             handler(.success(result))
                                             self.resetNumberOfRetries()
                                         } catch {
-                                            if let error = error as? AlertMessage {
+                                            if let error = error as? AlertError {
                                                 return handler(.failure(error))
                                             }
                                             handler(.failure(self.parseApiError(data: data.data)))
@@ -81,12 +81,12 @@ class APIManager {
         self.retrier.numberOfRetries = 0
     }
     
-    private func parseApiError(data: Data?) -> AlertMessage {
+    private func parseApiError(data: Data?) -> AlertError {
         let decoder = JSONDecoder()
         if let jsonData = data, let error = try? decoder.decode(NetworkError.self, from: jsonData) {
-            return AlertMessage(title: L10n.errorAlertTitle, body: error.key ?? error.message)
+            return AlertError(title: L10n.errorAlertTitle, message: error.key ?? error.message)
         }
-        return AlertMessage(title: L10n.errorAlertTitle, body: L10n.genericErrorMessage)
+        return AlertError(title: L10n.errorAlertTitle, message: L10n.genericErrorMessage)
     }
 
 }

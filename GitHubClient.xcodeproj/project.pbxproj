@@ -60,7 +60,7 @@
 		50D51B6622B3262000506BB0 /* CAGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6122B3262000506BB0 /* CAGradientLayer.swift */; };
 		50D51B6722B3262000506BB0 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6222B3262000506BB0 /* UITableView.swift */; };
 		50D51B6822B3262000506BB0 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6422B3262000506BB0 /* NSObject.swift */; };
-		50D51B6C22B3291C00506BB0 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6A22B3291B00506BB0 /* AlertMessage.swift */; };
+		50D51B6C22B3291C00506BB0 /* AlertError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6A22B3291B00506BB0 /* AlertError.swift */; };
 		50D51B6D22B3291C00506BB0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6B22B3291B00506BB0 /* NetworkError.swift */; };
 		50D51B7022B329E000506BB0 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B6F22B329DF00506BB0 /* EndPointType.swift */; };
 		50D51B7222B32ABE00506BB0 /* EndPointItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D51B7122B32ABD00506BB0 /* EndPointItems.swift */; };
@@ -127,7 +127,7 @@
 		50D51B6122B3262000506BB0 /* CAGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAGradientLayer.swift; sourceTree = "<group>"; };
 		50D51B6222B3262000506BB0 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		50D51B6422B3262000506BB0 /* NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
-		50D51B6A22B3291B00506BB0 /* AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		50D51B6A22B3291B00506BB0 /* AlertError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertError.swift; sourceTree = "<group>"; };
 		50D51B6B22B3291B00506BB0 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		50D51B6F22B329DF00506BB0 /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
 		50D51B7122B32ABD00506BB0 /* EndPointItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointItems.swift; sourceTree = "<group>"; };
@@ -398,7 +398,7 @@
 		50D51B6922B3291B00506BB0 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				50D51B6A22B3291B00506BB0 /* AlertMessage.swift */,
+				50D51B6A22B3291B00506BB0 /* AlertError.swift */,
 				50D51B6B22B3291B00506BB0 /* NetworkError.swift */,
 			);
 			path = Networking;
@@ -623,7 +623,7 @@
 				50D51B6522B3262000506BB0 /* Logger.swift in Sources */,
 				50D51B6622B3262000506BB0 /* CAGradientLayer.swift in Sources */,
 				503103312228279E0045B69F /* UserDetailFooterView.swift in Sources */,
-				50D51B6C22B3291C00506BB0 /* AlertMessage.swift in Sources */,
+				50D51B6C22B3291C00506BB0 /* AlertError.swift in Sources */,
 				50D51B7822B32F7E00506BB0 /* ApiManager.swift in Sources */,
 				5032971F22B73B2200979438 /* UIViewController.swift in Sources */,
 				50621E082227814200EF217F /* UserDetailSectionView.swift in Sources */,

@@ -18,7 +18,7 @@ struct UserDetailActionCreator {
         UserRequest.get(login: login).done { user in
             store.dispatch(UserDetailState.UserDetailAction.loadedUser(user: user))
             }.catch { (error) in
-                store.dispatch(UserDetailState.UserDetailAction.failure(message: error as! AlertMessage))
+                store.dispatch(UserDetailState.UserDetailAction.failure(error as! AlertError))
         }
         
     }
@@ -41,7 +41,7 @@ struct UserDetailActionCreator {
                 store.dispatch(UserDetailState.UserDetailAction.loadedRepositoryList(repostoryList: filteredRepositoryList))
             }
             }.catch { (error) in
-                store.dispatch(UserDetailState.UserDetailAction.failure(message: error as! AlertMessage))
+                store.dispatch(UserDetailState.UserDetailAction.failure(error as! AlertError))
         }
         
     }

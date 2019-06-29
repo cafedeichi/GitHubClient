@@ -13,13 +13,13 @@ extension UIViewController {
     
     // MARK: - Public methods
     
-    func showAlertWith(message: AlertMessage?, style: UIAlertController.Style = .alert, completion: (() -> Void)? = nil) {
+    func showAlertWith(error: AlertError?, style: UIAlertController.Style = .alert, completion: (() -> Void)? = nil) {
         
-        if message == nil {
+        if error == nil {
             return
         }
         
-        let alertController = UIAlertController(title: message!.title, message: message!.body, preferredStyle: style)
+        let alertController = UIAlertController(title: error!.title, message: error!.message, preferredStyle: style)
 
         let action = UIAlertAction(title: "OK", style: .default) { (_) in
             alertController.dismiss(animated: true) {

@@ -13,5 +13,5 @@ struct UserDetailState: StateType {
     var user: UserEntity?
     var page: Int = 0
     var repositoryList: [RepositoryEntity] = []
-    var message: AlertMessage?
+    var error: AlertError?
 }

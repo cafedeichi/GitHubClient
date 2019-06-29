@@ -32,10 +32,10 @@ struct UserListReducer {
                     state.userList += userList
                 }
             }
-            state.message = nil
+            state.error = nil
         case let .failure(message):
             state.isLoading = false
-            state.message = message
+            state.error = message
         }
         
         return state

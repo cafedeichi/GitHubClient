@@ -35,9 +35,9 @@ class UserListViewController: UIViewController {
         }
     }
 
-    fileprivate var message: AlertMessage? = nil {
+    fileprivate var error: AlertError? = nil {
         didSet {
-            self.showAlertWith(message: message)
+            self.showAlertWith(error: error)
         }
     }
     
@@ -90,7 +90,7 @@ extension UserListViewController: StoreSubscriber {
         self.isLoading = state.userList.isLoading
         self.since = state.userList.since
         self.userList = state.userList.userList
-        self.message = state.userList.message
+        self.error = state.userList.error
     }
     
 }
