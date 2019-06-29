@@ -13,7 +13,7 @@ extension UIViewController {
     
     // MARK: - Public methods
     
-    func showAlertWith(message: AlertMessage?, style: UIAlertController.Style = .alert) {
+    func showAlertWith(message: AlertMessage?, style: UIAlertController.Style = .alert, completion: (() -> Void)? = nil) {
         
         if message == nil {
             return
@@ -21,8 +21,10 @@ extension UIViewController {
         
         let alertController = UIAlertController(title: message!.title, message: message!.body, preferredStyle: style)
 
-        let action = UIAlertAction(title: "Ok", style: .default) { (_) in
-            self.dismiss(animated: true, completion: nil)
+        let action = UIAlertAction(title: "OK", style: .default) { (_) in
+            alertController.dismiss(animated: true) {
+                completion?()
+            }
         }
         
         alertController.addAction(action)
