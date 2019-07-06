@@ -14,7 +14,14 @@ class APIManager {
     
     private let sessionManager: SessionManager
     private let retrier: APIManagerRetrier
+    
+    #if DEVELOP
     static let networkEnviroment: NetworkEnvironment = .dev
+    #elseif STAGING
+    static let networkEnviroment: NetworkEnvironment = .stage
+    #else
+    static let networkEnviroment: NetworkEnvironment = .production
+    #endif
     
     private static var sharedApiManager: APIManager = {
         let apiManager = APIManager(sessionManager: SessionManager(), retrier: APIManagerRetrier())
