@@ -13,6 +13,16 @@ target 'GitHubClient' do
   pod 'SwiftGen', '~> 6.1.0'
   pod 'SwiftLint', '~> 0.33.0'
   
+  target 'GitHubClientTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  
+  target 'GitHubClientUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  
 end
 
 post_install do | installer |
