@@ -37,6 +37,26 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "50520F9022D33E8900E91D8A"
+               BuildableName = "GitHubClientUITests.xctest"
+               BlueprintName = "GitHubClientUITests"
+               ReferencedContainer = "container:GitHubClient.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "50520F9F22D33ECC00E91D8A"
+               BuildableName = "GitHubClientTests.xctest"
+               BlueprintName = "GitHubClientTests"
+               ReferencedContainer = "container:GitHubClient.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
