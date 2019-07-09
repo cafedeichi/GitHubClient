@@ -9,9 +9,13 @@
 import Foundation
 import PromiseKit
 
-class RepositoryRequest {
+protocol RepositoryRequestProtocol {
+    func getList(login: String, page: Int) -> Promise<[RepositoryEntity]>
+}
+
+class RepositoryRequest: RepositoryRequestProtocol {
     
-    public static func getList(login: String, page: Int = 0) -> Promise<[RepositoryEntity]> {
+    public func getList(login: String, page: Int = 0) -> Promise<[RepositoryEntity]> {
         
         let parameters: [String: Any] = [
             "page": page

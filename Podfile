@@ -16,6 +16,7 @@ target 'GitHubClient' do
   target 'GitHubClientTests' do
     inherit! :search_paths
     # Pods for testing
+    pod "Cuckoo", '~> 1.0.6'
   end
   
   target 'GitHubClientUITests' do

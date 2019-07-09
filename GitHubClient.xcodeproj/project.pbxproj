@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,10 +29,10 @@
 		50621E062227811C00EF217F /* UserDetailSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50621E052227811C00EF217F /* UserDetailSectionView.xib */; };
 		50621E082227814200EF217F /* UserDetailSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50621E072227814200EF217F /* UserDetailSectionView.swift */; };
 		5064C044222143760042A439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064C043222143760042A439 /* AppDelegate.swift */; };
-		5064C046222143760042A439 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		5064C048222143760042A439 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		5064C04A222143760042A439 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
-		5064C04C222143760042A439 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		5064C046222143760042A439 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		5064C048222143760042A439 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		5064C04A222143760042A439 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		5064C04C222143760042A439 /* (null) in Resources */ = {isa = PBXBuildFile; };
 		5064C056222143780042A439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5064C054222143780042A439 /* LaunchScreen.storyboard */; };
 		50879FF722217855002267E1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50879FF622217855002267E1 /* AppState.swift */; };
 		50879FF922217F3E002267E1 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50879FF822217F3E002267E1 /* AppReducer.swift */; };
@@ -56,6 +56,7 @@
 		50ADFBBD222572B80037924E /* RepositoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBBC222572B80037924E /* RepositoryRequest.swift */; };
 		50ADFBBF222574A30037924E /* UserDetailActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBBE222574A30037924E /* UserDetailActionCreator.swift */; };
 		50ADFBC1222576F60037924E /* UserDetailReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADFBC0222576F60037924E /* UserDetailReducer.swift */; };
+		50C0F53822D42CE60048BD3E /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0F53722D42CE60048BD3E /* GeneratedMocks.swift */; };
 		50CCD4F822BDF7F400236BE9 /* UserListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50CCD4F722BDF7F400236BE9 /* UserListViewController.xib */; };
 		50D1EAB02262E73A00CCF6CB /* LicenseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAAF2262E73A00CCF6CB /* LicenseEntity.swift */; };
 		50D1EAB32262F60500CCF6CB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D1EAB22262F60500CCF6CB /* Coordinator.swift */; };
@@ -147,6 +148,7 @@
 		50ADFBBC222572B80037924E /* RepositoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRequest.swift; sourceTree = "<group>"; };
 		50ADFBBE222574A30037924E /* UserDetailActionCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailActionCreator.swift; sourceTree = "<group>"; };
 		50ADFBC0222576F60037924E /* UserDetailReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailReducer.swift; sourceTree = "<group>"; };
+		50C0F53722D42CE60048BD3E /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		50CCD4F722BDF7F400236BE9 /* UserListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListViewController.xib; sourceTree = "<group>"; };
 		50D1EAAF2262E73A00CCF6CB /* LicenseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseEntity.swift; sourceTree = "<group>"; };
 		50D1EAB22262F60500CCF6CB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				50520FA222D33ECC00E91D8A /* GitHubClientTests.swift */,
+				50C0F53722D42CE60048BD3E /* GeneratedMocks.swift */,
 				50520FA422D33ECC00E91D8A /* Info.plist */,
 			);
 			path = GitHubClientTests;
@@ -256,9 +259,9 @@
 			isa = PBXGroup;
 			children = (
 				5064C042222143760042A439 /* GitHubClient */,
-				5099F932227E845500E2A3A7 /* Generated */,
-				50520F9222D33E8900E91D8A /* GitHubClientUITests */,
 				50520FA122D33ECC00E91D8A /* GitHubClientTests */,
+				50520F9222D33E8900E91D8A /* GitHubClientUITests */,
+				5099F932227E845500E2A3A7 /* Generated */,
 				5064C041222143760042A439 /* Products */,
 				E78646BDFA6263D02C88292C /* Pods */,
 				61818A97E2BA5E1B7050D548 /* Frameworks */,
@@ -570,6 +573,8 @@
 				50520F9C22D33ECC00E91D8A /* Sources */,
 				50520F9D22D33ECC00E91D8A /* Frameworks */,
 				50520F9E22D33ECC00E91D8A /* Resources */,
+				E18D2186239E7D8569D1E41D /* [CP] Embed Pods Frameworks */,
+				50C0F53222D422300048BD3E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -666,18 +671,18 @@
 			files = (
 				50CCD4F822BDF7F400236BE9 /* UserListViewController.xib in Resources */,
 				50621E062227811C00EF217F /* UserDetailSectionView.xib in Resources */,
-				5064C04C222143760042A439 /* BuildFile in Resources */,
-				5064C04A222143760042A439 /* BuildFile in Resources */,
+				5064C04C222143760042A439 /* (null) in Resources */,
+				5064C04A222143760042A439 /* (null) in Resources */,
 				50621DFF222672A900EF217F /* Assets.xcassets in Resources */,
 				50621DF02226396500EF217F /* UserDetailViewController.xib in Resources */,
 				50621DFD2226627000EF217F /* UserDetailItemCell.xib in Resources */,
-				5064C048222143760042A439 /* BuildFile in Resources */,
+				5064C048222143760042A439 /* (null) in Resources */,
 				5064C056222143780042A439 /* LaunchScreen.storyboard in Resources */,
 				5087A00822219166002267E1 /* UserListItemCell.xib in Resources */,
 				5087A02B2222A1B7002267E1 /* Main.storyboard in Resources */,
 				50621DF4222639AD00EF217F /* UserRepositoryItemCell.xib in Resources */,
 				50310333222827AD0045B69F /* UserDetailFooterView.xib in Resources */,
-				5064C046222143760042A439 /* BuildFile in Resources */,
+				5064C046222143760042A439 /* (null) in Resources */,
 				504DE28222C1BDE600494DD9 /* Messages.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -702,6 +707,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		50C0F53222D422300048BD3E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"${PROJECT_DIR}/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"${PROJECT_DIR}/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = ${OUTPUT_FILE}\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = ${INPUT_DIR}\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"${PROJECT_NAME}\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"${INPUT_DIR}/Models/Requests/UserRequest.swift\" \\\n\"${INPUT_DIR}/Models/Requests/RepositoryRequest.swift\" \\\n";
 		};
 		5EDDC674967690BAC2323CAF /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -761,6 +783,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E18D2186239E7D8569D1E41D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitHubClientTests/Pods-GitHubClientTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitHubClientTests/Pods-GitHubClientTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitHubClientTests/Pods-GitHubClientTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F7B2D1F5A68357B0D00B6382 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -794,6 +833,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50520FA322D33ECC00E91D8A /* GitHubClientTests.swift in Sources */,
+				50C0F53822D42CE60048BD3E /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

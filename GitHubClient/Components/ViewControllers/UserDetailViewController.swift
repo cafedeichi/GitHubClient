@@ -54,6 +54,8 @@ class UserDetailViewController: BaseViewController, UserDetailViewControllerProt
     fileprivate var footerView: UserDetailFooterView!
     fileprivate var tapGesture: UITapGestureRecognizer!
     
+    fileprivate let userDetailActionCreator = UserDetailActionCreator()
+    
     // MARK: - RegisterViewControllerProtocol
     
     var onBack: (() -> Void)?
@@ -106,19 +108,19 @@ class UserDetailViewController: BaseViewController, UserDetailViewControllerProt
         self.userDetailTableView.tableFooterView = self.footerView
         
         self.userDetailTableView.addPullToRefresh(refresher) {
-            UserDetailActionCreator.fetchUser(login: self.selectedUser.login)
-            UserDetailActionCreator.fetchRepositoryList(login: self.selectedUser.login, refresh: true)
+            self.userDetailActionCreator.fetchUser(login: self.selectedUser.login)
+            self.userDetailActionCreator.fetchRepositoryList(login: self.selectedUser.login, refresh: true)
         }
         
-        UserDetailActionCreator.fetchUser(login: self.selectedUser.login)
-        UserDetailActionCreator.fetchRepositoryList(login: self.selectedUser.login)
+        self.userDetailActionCreator.fetchUser(login: self.selectedUser.login)
+        self.userDetailActionCreator.fetchRepositoryList(login: self.selectedUser.login)
         
     }
     
     // MARK: - Actions
     
     @objc fileprivate func viewTapped(_ sender: UIGestureRecognizer? = nil) {
-        UserDetailActionCreator.fetchRepositoryList(login: self.selectedUser.login, page: self.page, loadMore: true)
+        self.userDetailActionCreator.fetchRepositoryList(login: self.selectedUser.login, page: self.page, loadMore: true)
     }
     
     // MARK: - Public methods

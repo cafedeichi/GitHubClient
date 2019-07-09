@@ -9,9 +9,14 @@
 import Foundation
 import PromiseKit
 
-class UserRequest {
+protocol UserRequestProtocol {
+    func getList(since: Int) -> Promise<[UserEntity]>
+    func get(login: String) -> Promise<UserEntity>
+}
+
+class UserRequest: UserRequestProtocol {
         
-    public static func getList(since: Int = 0) -> Promise<[UserEntity]> {
+    public func getList(since: Int = 0) -> Promise<[UserEntity]> {
         
         let parameters: [String: Any] = [
             "since": since
@@ -31,7 +36,7 @@ class UserRequest {
         
     }
     
-    public static func get(login: String) -> Promise<UserEntity> {
+    public func get(login: String) -> Promise<UserEntity> {
         
         return Promise<UserEntity> { seal in
             APIManager.shared().call(type: EndPointItemsType.getUser(login: login)) { (response: Swift.Result<UserEntity, AlertError>) in

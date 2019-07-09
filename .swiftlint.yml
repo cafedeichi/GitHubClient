@@ -5,6 +5,7 @@ disabled_rules:
 excluded:
 - Carthage
 - Pods
+- GitHubClientTests/GeneratedMocks.swift
 identifier_name:
   excluded:
   - id

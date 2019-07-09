@@ -41,6 +41,8 @@ class UserListViewController: UIViewController {
         }
     }
     
+    fileprivate let userListActionCreator = UserListActionCreator()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.prepare()
@@ -75,10 +77,10 @@ class UserListViewController: UIViewController {
         self.userListTableView.separatorColor = UIColor.clear
         
         self.userListTableView.addPullToRefresh(refresher) {
-            UserListActionCreator.fetchUserList(since: self.since, refresh: true)
+            self.userListActionCreator.fetchUserList(since: self.since, refresh: true)
         }
 
-        UserListActionCreator.fetchUserList(since: self.since)
+        self.userListActionCreator.fetchUserList(since: self.since)
         
     }
 
@@ -127,7 +129,7 @@ extension UserListViewController {
         let maximumOffset = scrollView.contentSize.height - scrollView.frame.size.height
         
         if maximumOffset - currentOffset <= 10.0 {
-            UserListActionCreator.fetchUserList(since: self.since)
+            self.userListActionCreator.fetchUserList(since: self.since)
         }
         
     }
