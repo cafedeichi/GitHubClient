@@ -41,7 +41,7 @@ class APIManagerRetrier: RequestRetrier {
     
     private func getRefreshToken (complition: ((Bool) -> Void)) {
         // TODO: call API to get a new access token.
-        complition(true)
+        complition(false)
     }
     
 }

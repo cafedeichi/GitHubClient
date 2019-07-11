@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: GitHubClient/Models/Requests/RepositoryRequest.swift at 2019-07-09 02:31:19 +0000
+// MARK: - Mocks generated from file: GitHubClient/Models/Requests/RepositoryRequest.swift at 2019-07-11 11:13:55 +0000
 
 //
 //  RepositoryRequest.swift
@@ -196,7 +196,7 @@ import PromiseKit
 }
 
 
-// MARK: - Mocks generated from file: GitHubClient/Models/Requests/UserRequest.swift at 2019-07-09 02:31:19 +0000
+// MARK: - Mocks generated from file: GitHubClient/Models/Requests/UserRequest.swift at 2019-07-11 11:13:55 +0000
 
 //
 //  UserRequest.swift
