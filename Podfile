@@ -7,11 +7,11 @@ target 'GitHubClient' do
   pod 'Alamofire', '~> 4.8.2'
   pod 'AlamofireImage', '~> 3.5.2'
   pod 'KRProgressHUD', '~> 3.4.1'
-  pod 'PromiseKit', '~> 6.10.0'
+  pod 'PromiseKit', '~> 6.11.0'
   pod 'PullToRefresher', '~> 3.1.0'
-  pod 'ReSwift', '~> 4.1.1'
+  pod 'ReSwift', '~> 5.0.0'
   pod 'SwiftGen', '~> 6.1.0'
-  pod 'SwiftLint', '~> 0.33.0'
+  pod 'SwiftLint', '~> 0.35.0'
   
 end
 

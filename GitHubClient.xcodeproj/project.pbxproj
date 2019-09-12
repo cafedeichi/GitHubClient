@@ -25,10 +25,10 @@
 		50621E062227811C00EF217F /* UserDetailSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50621E052227811C00EF217F /* UserDetailSectionView.xib */; };
 		50621E082227814200EF217F /* UserDetailSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50621E072227814200EF217F /* UserDetailSectionView.swift */; };
 		5064C044222143760042A439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5064C043222143760042A439 /* AppDelegate.swift */; };
-		5064C046222143760042A439 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		5064C048222143760042A439 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		5064C04A222143760042A439 /* (null) in Resources */ = {isa = PBXBuildFile; };
-		5064C04C222143760042A439 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		5064C046222143760042A439 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		5064C048222143760042A439 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		5064C04A222143760042A439 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
+		5064C04C222143760042A439 /* BuildFile in Resources */ = {isa = PBXBuildFile; };
 		5064C056222143780042A439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5064C054222143780042A439 /* LaunchScreen.storyboard */; };
 		50879FF722217855002267E1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50879FF622217855002267E1 /* AppState.swift */; };
 		50879FF922217F3E002267E1 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50879FF822217F3E002267E1 /* AppReducer.swift */; };
@@ -523,18 +523,18 @@
 			files = (
 				50CCD4F822BDF7F400236BE9 /* UserListViewController.xib in Resources */,
 				50621E062227811C00EF217F /* UserDetailSectionView.xib in Resources */,
-				5064C04C222143760042A439 /* (null) in Resources */,
-				5064C04A222143760042A439 /* (null) in Resources */,
+				5064C04C222143760042A439 /* BuildFile in Resources */,
+				5064C04A222143760042A439 /* BuildFile in Resources */,
 				50621DFF222672A900EF217F /* Assets.xcassets in Resources */,
 				50621DF02226396500EF217F /* UserDetailViewController.xib in Resources */,
 				50621DFD2226627000EF217F /* UserDetailItemCell.xib in Resources */,
-				5064C048222143760042A439 /* (null) in Resources */,
+				5064C048222143760042A439 /* BuildFile in Resources */,
 				5064C056222143780042A439 /* LaunchScreen.storyboard in Resources */,
 				5087A00822219166002267E1 /* UserListItemCell.xib in Resources */,
 				5087A02B2222A1B7002267E1 /* Main.storyboard in Resources */,
 				50621DF4222639AD00EF217F /* UserRepositoryItemCell.xib in Resources */,
 				50310333222827AD0045B69F /* UserDetailFooterView.xib in Resources */,
-				5064C046222143760042A439 /* (null) in Resources */,
+				5064C046222143760042A439 /* BuildFile in Resources */,
 				504DE28222C1BDE600494DD9 /* Messages.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -579,25 +579,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GitHubClient/Pods-GitHubClient-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
-				"${BUILT_PRODUCTS_DIR}/KRActivityIndicatorView/KRActivityIndicatorView.framework",
-				"${BUILT_PRODUCTS_DIR}/KRProgressHUD/KRProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
-				"${BUILT_PRODUCTS_DIR}/PullToRefresher/PullToRefresh.framework",
-				"${BUILT_PRODUCTS_DIR}/ReSwift/ReSwift.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitHubClient/Pods-GitHubClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRActivityIndicatorView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KRProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PullToRefresh.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReSwift.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitHubClient/Pods-GitHubClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
